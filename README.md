@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Página de "Puchulita" - Tienda Infantil
 
 ## Descripción
@@ -237,3 +238,7 @@ La estructura de carpetas y archivos importantes es la siguiente:
 ## Comentarios y Sugerencias para Mejorar la Documentación
 Si tienes comentarios o sugerencias para mejorar la documentación, por favor háznoslo saber. Puedes crear un issue en el repositorio de GitHub o contactarnos directamente.
 
+=======
+# vhsvideoclubonline
+Pagina del Proyecto VHS - VideoClub Retro Online
+>>>>>>> 91549e4cad75b86c2d4f24593580ddedabc9c971
