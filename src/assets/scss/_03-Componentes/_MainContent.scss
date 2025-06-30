@@ -1,0 +1,66 @@
+.main-content {
+  padding: 1rem;
+  position: relative;
+  z-index: 10;
+
+  &__banner {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 3px solid #b6a65d;
+    border-radius: 20px;
+    background-color: rgba(0, 26, 77, 0.432);
+    box-shadow: 0 0 20px rgba(255, 217, 0, 0.555);
+  }
+
+  &__titulo {
+    font-family: 'Rubik Mono One', sans-serif;
+    color: #ebcf53;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 3px 3px 0 #0033a0;
+    letter-spacing: 2px;
+  }
+
+  &__subtitulo {
+    font-family: 'VCR OSD Mono', monospace;
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    padding: 1.5rem;
+
+    &__titulo {
+      font-size: 3rem;
+    }
+
+    &__subtitulo {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-content {
+    padding: 2rem;
+  }
+}
+
+.loading, .error {
+  font-family: 'VCR OSD Mono', monospace;
+  color: #b6a65d;
+  text-align: center;
+  padding: 2rem;
+  border: 2px dashed #b6a65d;
+  margin: 1rem;
+  background: rgba(0, 26, 77, 0.7);
+}
+
+.error {
+  color: #ff0000;
+  border-color: #ff0000;
+}

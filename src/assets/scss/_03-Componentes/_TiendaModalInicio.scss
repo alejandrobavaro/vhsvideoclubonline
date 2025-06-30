@@ -1,0 +1,198 @@
+// Estilos del modal Blockbuster
+.BlockbusterOverlay {
+  position: fixed;
+  top: 80px; /* Ajuste para posición debajo del header */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(#0a1a3a, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: blockbuster-fadeIn 0.3s ease;
+}
+
+.BlockbusterModal {
+  position: relative;
+  background: transparent;
+  overflow: auto;
+  border-radius: 0;
+  outline: none;
+  padding: 0;
+  border: none;
+  max-width: 90%;
+  margin-top: 20px; /* Espacio adicional */
+}
+
+.film-strip-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+    linear-gradient(90deg, rgba(255, 209, 0, 0.05), rgba(255, 255, 255, 0.02), rgba(255, 209, 0, 0.05));
+  background-size: 100% 4px, 4px 100%;
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.film-strip-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: repeating-linear-gradient(
+    90deg,
+    #0a1a3a,
+    #0a1a3a 15px,
+    #ffd100 15px,
+    #ffd100 30px
+  );
+}
+
+.blockbuster-modal-wrapper {
+  position: relative;
+  background-color: #0a1a3a;
+  border: 3px solid #ffd100;
+  border-radius: 4px;
+  padding: 25px;
+  max-width: 500px;
+  animation: blockbuster-scaleUp 0.3s ease;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.blockbuster-modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #122b5a;
+  color: #ffd100;
+  border: 2px solid #ffd100;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  
+  &:hover {
+    background-color: #ffd100;
+    color: #0a1a3a;
+  }
+}
+
+.blockbuster-modal-content {
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Arial Black', sans-serif;
+}
+
+.blockbuster-modal-title {
+  font-size: 1.5rem;
+  color: #ffd100;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.blockbuster-modal-subtitle {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.blockbuster-promo-list {
+  margin: 1.5rem 0;
+  
+  .blockbuster-promo-item {
+    background-color: rgba(18, 43, 90, 0.5);
+    color: #ffd100;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    border-left: 3px solid #ffd100;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      background-color: rgba(255, 209, 0, 0.1);
+    }
+  }
+}
+
+.blockbuster-divider {
+  height: 2px;
+  background: linear-gradient(to right, transparent, #ffd100, transparent);
+  margin: 1.5rem 0;
+}
+
+.blockbuster-primary-btn {
+  background-color: #122b5a;
+  color: #ffd100;
+  border: 2px solid #ffd100;
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background-color: #ffd100;
+    color: #0a1a3a;
+  }
+}
+
+// Animaciones
+@keyframes blockbuster-fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes blockbuster-scaleUp {
+  from { transform: scale(0.9); }
+  to { transform: scale(1); }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .BlockbusterOverlay {
+    top: 70px; /* Ajuste para móvil */
+  }
+  
+  .blockbuster-modal-wrapper {
+    padding: 20px;
+  }
+  
+  .blockbuster-modal-title {
+    font-size: 1.3rem;
+  }
+  
+  .blockbuster-modal-subtitle {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .BlockbusterOverlay {
+    top: 90px; /* Ajuste para desktop */
+  }
+  
+  .blockbuster-modal-wrapper {
+    max-width: 550px;
+  }
+}

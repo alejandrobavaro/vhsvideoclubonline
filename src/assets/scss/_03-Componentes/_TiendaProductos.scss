@@ -1,0 +1,173 @@
+.blockbuster-products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: #0a1a3a;
+}
+
+.blockbuster-product-card {
+  position: relative;
+  background-color: #122b5a;
+  border: 2px solid #ffd100;
+  border-radius: 4px;
+  padding: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(255, 209, 0, 0.4);
+  }
+}
+
+.blockbuster-offer-tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ffe600;
+  color: #0011ff;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 2;
+
+  .offer-text {
+    font-size: 0.7rem;
+  }
+  
+  .offer-percent {
+    font-size: 0.9rem;
+  }
+}
+
+.movie-product-frame {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  margin: 0 auto 15px;
+  overflow: hidden;
+  border: 1px solid #0a1a3a;
+  background-color: #000000;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.blockbuster-product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.film-reel-corner {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  background-color: #0a1a3a;
+  border-radius: 50%;
+  border: 2px solid #ffd100;
+  z-index: 2;
+}
+
+.blockbuster-product-title {
+  font-size: 1rem;
+  color: #ffffff;
+  margin: 10px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blockbuster-price-container {
+  margin: 15px 0;
+}
+
+.blockbuster-product-price {
+  font-size: 1.2rem;
+  color: #ffd100;
+  font-weight: bold;
+}
+
+.blockbuster-original-price {
+  display: block;
+  font-size: 0.9rem;
+  color: #aaaaaa;
+  text-decoration: line-through;
+  margin-top: 5px;
+}
+
+.blockbuster-add-to-cart {
+  background-color: #0a1a3a;
+  color: #ffd100;
+  border: 2px solid #ffd100;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  
+  &:hover {
+    background-color: #ffd100;
+    color: #0a1a3a;
+  }
+}
+
+@media (min-width: 768px) {
+  .blockbuster-products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 25px;
+    padding: 25px;
+  }
+  
+  .movie-product-frame {
+    height: 250px;
+  }
+  
+  .blockbuster-product-title {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .blockbuster-products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 30px;
+  }
+  
+  .blockbuster-product-card {
+    padding: 20px;
+  }
+  
+  .movie-product-frame {
+    height: 300px;
+  }
+  
+  .blockbuster-product-title {
+    font-size: 1.2rem;
+  }
+  
+  .blockbuster-add-to-cart {
+    padding: 12px;
+    font-size: 1rem;
+  }
+}

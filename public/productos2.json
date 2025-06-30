@@ -1,0 +1,1302 @@
+[
+  {
+    "id": 1,
+    "nombre": "VHS - Star Wars: Una Nueva Esperanza",
+    "precio": 50000,
+    "imagenes": [
+      "/img/06-tienda/tienda1-a.png",
+      "/img/06-tienda/tienda1-b.png",
+      "/img/06-tienda/tienda1-c.png",
+      "/img/06-tienda/tienda1-d.png"
+    ],
+    "categoria": "vhs",
+    "descripcion": "Edición clásica en VHS de la película que inició la saga galáctica."
+  },
+  {
+    "id": 2,
+    "nombre": "DVD - El Padrino - Edición Especial",
+    "precio": 55890,
+    "imagenes": [
+      "/img/06-tienda/tienda2-a.png",
+      "/img/06-tienda/tienda2-b.png",
+      "/img/06-tienda/tienda2-c.png",
+      "/img/06-tienda/tienda2-d.png"
+    ],
+    "categoria": "dvd",
+    "descripcion": "Clásico del cine en edición especial con contenido adicional."
+  },
+  {
+    "id": 3,
+    "nombre": "Blu-ray - Interstellar - Edición Coleccionista",
+    "precio": 38250,
+    "imagenes": [
+      "/img/06-tienda/tienda3-a.png",
+      "/img/06-tienda/tienda3-b.png",
+      "/img/06-tienda/tienda3-c.png",
+      "/img/06-tienda/tienda3-d.png"
+    ],
+    "categoria": "bluray",
+    "descripcion": "Epico viaje interestelar en alta definición con escenas extendidas."
+  },
+  {
+    "id": 4,
+    "nombre": "Vinilo - BSO Pulp Fiction",
+    "precio": 67780,
+    "imagenes": [
+      "/img/06-tienda/tienda4-a.png",
+      "/img/06-tienda/tienda4-b.png",
+      "/img/06-tienda/tienda4-c.png",
+      "/img/06-tienda/tienda4-d.png"
+    ],
+    "categoria": "vinilo",
+    "descripcion": "Banda sonora original de la película de Quentin Tarantino en vinilo."
+  },
+  {
+    "id": 5,
+    "nombre": "Poster - The Dark Knight - Edición Limitada",
+    "precio": 45210,
+    "imagenes": [
+      "/img/06-tienda/tienda5-a.png",
+      "/img/06-tienda/tienda5-b.png",
+      "/img/06-tienda/tienda5-c.png",
+      "/img/06-tienda/tienda5-d.png"
+    ],
+    "categoria": "poster",
+    "descripcion": "Póster coleccionable del Caballero de la Noche en tamaño grande."
+  },
+  {
+    "id": 6,
+    "nombre": "VHS - E.T. El Extraterrestre",
+    "precio": 81900,
+    "imagenes": [
+      "/img/06-tienda/tienda6-a.png",
+      "/img/06-tienda/tienda6-b.png",
+      "/img/06-tienda/tienda6-c.png",
+      "/img/06-tienda/tienda6-d.png"
+    ],
+    "categoria": "vhs",
+    "descripcion": "Edición original en VHS del clásico de Spielberg."
+  },
+  {
+    "id": 7,
+    "nombre": "DVD - Titanic - Edición Aniversario",
+    "precio": 73560,
+    "imagenes": [
+      "/img/06-tienda/tienda7-a.png",
+      "/img/06-tienda/tienda7-b.png",
+      "/img/06-tienda/tienda7-c.png",
+      "/img/06-tienda/tienda7-d.png"
+    ],
+    "categoria": "dvd",
+    "descripcion": "Edición especial con escenas eliminadas y documental del making-of."
+  },
+  {
+    "id": 8,
+    "nombre": "Blu-ray - Avengers: Endgame - 4K",
+    "precio": 59780,
+    "imagenes": [
+      "/img/06-tienda/tienda8-a.png",
+      "/img/06-tienda/tienda8-b.png",
+      "/img/06-tienda/tienda8-c.png",
+      "/img/06-tienda/tienda8-d.png"
+    ],
+    "categoria": "bluray",
+    "descripcion": "Epico final de la saga Infinity en resolución 4K Ultra HD."
+  },
+  {
+    "id": 9,
+    "nombre": "Cassette - BSO Top Gun",
+    "precio": 44370,
+    "imagenes": [
+      "/img/06-tienda/tienda9-a.png",
+      "/img/06-tienda/tienda9-b.png",
+      "/img/06-tienda/tienda9-c.png",
+      "/img/06-tienda/tienda9-d.png"
+    ],
+    "categoria": "cassette",
+    "descripcion": "Banda sonora original en cassette con los éxitos de la película."
+  },
+  {
+    "id": 10,
+    "nombre": "CD - BSO Guardians of the Galaxy",
+    "precio": 68240,
+    "imagenes": [
+      "/img/06-tienda/tienda10-a.png",
+      "/img/06-tienda/tienda10-b.png",
+      "/img/06-tienda/tienda10-c.png",
+      "/img/06-tienda/tienda10-d.png"
+    ],
+    "categoria": "cd",
+    "descripcion": "Awesome Mix Vol. 1 con los grandes éxitos de los 70s."
+  },
+  {
+    "id": 11,
+    "nombre": "VHS - Jurassic Park",
+    "precio": 88900,
+    "imagenes": [
+      "/img/06-tienda/tienda11-a.png",
+      "/img/06-tienda/tienda11-b.png",
+      "/img/06-tienda/tienda11-c.png",
+      "/img/06-tienda/tienda11-d.png"
+    ],
+    "categoria": "vhs",
+    "descripcion": "Edición original del clásico de dinosaurios de Spielberg."
+  },
+  {
+    "id": 12,
+    "nombre": "DVD - El Señor de los Anillos: La Comunidad del Anillo",
+    "precio": 54900,
+    "imagenes": [
+      "/img/06-tienda/tienda12-a.png",
+      "/img/06-tienda/tienda12-b.png",
+      "/img/06-tienda/tienda12-c.png",
+      "/img/06-tienda/tienda12-d.png"
+    ],
+    "categoria": "dvd",
+    "descripcion": "Primera parte de la trilogía épica en edición extendida."
+  },
+  {
+    "id": 13,
+    "nombre": "Blu-ray - Inception - Edición Especial",
+    "precio": 73750,
+    "imagenes": [
+      "/img/06-tienda/tienda13-a.png",
+      "/img/06-tienda/tienda13-b.png",
+      "/img/06-tienda/tienda13-c.png",
+      "/img/06-tienda/tienda13-d.png"
+    ],
+    "categoria": "bluray",
+    "descripcion": "Mind-bending thriller de Christopher Nolan con escenas exclusivas."
+  },
+  {
+    "id": 14,
+    "nombre": "Vinilo - BSO La La Land",
+    "precio": 61900,
+    "imagenes": [
+      "/img/06-tienda/tienda14-a.png",
+      "/img/06-tienda/tienda14-b.png",
+      "/img/06-tienda/tienda14-c.png",
+      "/img/06-tienda/tienda14-d.png"
+    ],
+    "categoria": "vinilo",
+    "descripcion": "Premiada banda sonora en edición de vinilo colorido."
+  },
+  {
+    "id": 15,
+    "nombre": "Poster - Star Wars: El Imperio Contraataca",
+    "precio": 41250,
+    "imagenes": [
+      "/img/06-tienda/tienda15-a.png",
+      "/img/06-tienda/tienda15-b.png",
+      "/img/06-tienda/tienda15-c.png",
+      "/img/06-tienda/tienda15-d.png"
+    ],
+    "categoria": "poster",
+    "descripcion": "Póster original de la mejor película de la saga Star Wars."
+  },
+  {
+    "id": 16,
+    "nombre": "VHS - Back to the Future",
+    "precio": 28900,
+    "imagenes": [
+        "/img/06-tienda/tienda16-a.png",
+        "/img/06-tienda/tienda16-b.png",
+        "/img/06-tienda/tienda16-c.png",
+        "/img/06-tienda/tienda16-d.png"
+    ],
+    "categoria": "vhs",
+    "descripcion": "Clásico de viajes en el tiempo en su formato VHS original."
+},
+{
+    "id": 17,
+    "nombre": "DVD - Matrix - Edición Especial",
+    "precio": 39800,
+    "imagenes": [
+        "/img/06-tienda/tienda17-a.png",
+        "/img/06-tienda/tienda17-b.png",
+        "/img/06-tienda/tienda17-c.png",
+        "/img/06-tienda/tienda17-d.png"
+    ],
+    "categoria": "dvd",
+    "descripcion": "Revolucionaria película de ciencia ficción con contenido adicional."
+},
+{
+    "id": 18,
+    "nombre": "Blu-ray - Blade Runner 2049",
+    "precio": 82600,
+    "imagenes": [
+        "/img/06-tienda/tienda18-a.png",
+        "/img/06-tienda/tienda18-b.png",
+        "/img/06-tienda/tienda18-c.png",
+        "/img/06-tienda/tienda18-d.png"
+    ],
+    "categoria": "bluray",
+    "descripcion": "Secuela del clásico de ciencia ficción en 4K HDR."
+},
+{
+    "id": 19,
+    "nombre": "Cassette - BSO Dirty Dancing",
+    "precio": 57200,
+    "imagenes": [
+        "/img/06-tienda/tienda19-a.png",
+        "/img/06-tienda/tienda19-b.png",
+        "/img/06-tienda/tienda19-c.png",
+        "/img/06-tienda/tienda19-d.png"
+    ],
+    "categoria": "cassette",
+    "descripcion": "Banda sonora original con los éxitos de la película."
+},
+{
+    "id": 20,
+    "nombre": "CD - BSO The Greatest Showman",
+    "precio": 47500,
+    "imagenes": [
+        "/img/06-tienda/tienda20-a.png",
+        "/img/06-tienda/tienda20-b.png",
+        "/img/06-tienda/tienda20-c.png",
+        "/img/06-tienda/tienda20-d.png"
+    ],
+    "categoria": "cd",
+    "descripcion": "Música del exitoso musical protagonizado por Hugh Jackman."
+},
+{
+    "id": 21,
+    "nombre": "VHS - Indiana Jones y los Cazadores del Arca Perdida",
+    "precio": 63600,
+    "imagenes": [
+        "/img/06-tienda/tienda21-a.png",
+        "/img/06-tienda/tienda21-b.png",
+        "/img/06-tienda/tienda21-c.png",
+        "/img/06-tienda/tienda21-d.png"
+    ],
+    "categoria": "vhs",
+    "descripcion": "Primera aventura de Indiana Jones en formato VHS."
+},
+{
+    "id": 22,
+    "nombre": "DVD - Forrest Gump - Edición Coleccionista",
+    "precio": 45200,
+    "imagenes": [
+        "/img/06-tienda/tienda22-a.png",
+        "/img/06-tienda/tienda22-b.png",
+        "/img/06-tienda/tienda22-c.png",
+        "/img/06-tienda/tienda22-d.png"
+    ],
+    "categoria": "dvd",
+    "descripcion": "Edición especial con documental sobre la vida real de Forrest."
+},
+{
+    "id": 23,
+    "nombre": "Blu-ray - Mad Max: Fury Road - Edición Black & Chrome",
+    "precio": 78200,
+    "imagenes": [
+        "/img/06-tienda/tienda23-a.png",
+        "/img/06-tienda/tienda23-b.png",
+        "/img/06-tienda/tienda23-c.png",
+        "/img/06-tienda/tienda23-d.png"
+    ],
+    "categoria": "bluray",
+    "descripcion": "Versión en blanco y negro aprobada por el director."
+},
+{
+    "id": 24,
+    "nombre": "Vinilo - BSO Breakfast at Tiffany's",
+    "precio": 69780,
+    "imagenes": [
+        "/img/06-tienda/tienda24-a.png",
+        "/img/06-tienda/tienda24-b.png",
+        "/img/06-tienda/tienda24-c.png",
+        "/img/06-tienda/tienda24-d.png"
+    ],
+    "categoria": "vinilo",
+    "descripcion": "Incluye el clásico 'Moon River' interpretado por Audrey Hepburn."
+},
+{
+    "id": 25,
+    "nombre": "Poster - Jaws (Tiburón)",
+    "precio": 62350,
+    "imagenes": [
+        "/img/06-tienda/tienda25-a.png",
+        "/img/06-tienda/tienda25-b.png",
+        "/img/06-tienda/tienda25-c.png",
+        "/img/06-tienda/tienda25-d.png"
+    ],
+    "categoria": "poster",
+    "descripcion": "Póster original del primer blockbuster de Spielberg."
+},
+{
+    "id": 26,
+    "nombre": "VHS - Ghostbusters (Los Cazafantasmas)",
+    "precio": 39800,
+    "imagenes": [
+        "/img/06-tienda/tienda26-a.png",
+        "/img/06-tienda/tienda26-b.png",
+        "/img/06-tienda/tienda26-c.png",
+        "/img/06-tienda/tienda26-d.png"
+    ],
+    "categoria": "vhs",
+    "descripcion": "Clásico de los 80 en su formato VHS original."
+},
+{
+    "id": 27,
+    "nombre": "DVD - The Shawshank Redemption",
+    "precio": 49500,
+    "imagenes": [
+        "/img/06-tienda/tienda27-a.png",
+        "/img/06-tienda/tienda27-b.png",
+        "/img/06-tienda/tienda27-c.png",
+        "/img/06-tienda/tienda27-d.png"
+    ],
+    "categoria": "dvd",
+    "descripcion": "Edición especial con comentarios del director Frank Darabont."
+},
+{
+    "id": 28,
+    "nombre": "Blu-ray - The Revenant - Edición 4K",
+    "precio": 37200,
+    "imagenes": [
+        "/img/06-tienda/tienda28-a.png",
+        "/img/06-tienda/tienda28-b.png",
+        "/img/06-tienda/tienda28-c.png",
+        "/img/06-tienda/tienda28-d.png"
+    ],
+    "categoria": "bluray",
+    "descripcion": "Película ganadora del Oscar en impresionante 4K HDR."
+},
+{
+    "id": 29,
+    "nombre": "Cassette - BSO Saturday Night Fever",
+    "precio": 58800,
+    "imagenes": [
+        "/img/06-tienda/tienda29-a.png",
+        "/img/06-tienda/tienda29-b.png",
+        "/img/06-tienda/tienda29-c.png",
+        "/img/06-tienda/tienda29-d.png"
+    ],
+    "categoria": "cassette",
+    "descripcion": "Los éxitos de los Bee Gees que definieron la era disco."
+},
+{
+  "id": 30,
+  "nombre": "CD - BSO Purple Rain",
+  "precio": 68900,
+  "imagenes": [
+    "/img/06-tienda/tienda30-a.png",
+    "/img/06-tienda/tienda30-b.png",
+    "/img/06-tienda/tienda30-c.png",
+    "/img/06-tienda/tienda30-d.png"
+  ],
+  "categoria": "cd",
+  "descripcion": "Banda sonora de la película protagonizada por Prince."
+},
+{
+  "id": 31,
+  "nombre": "VHS - The Goonies",
+  "precio": 41800,
+  "imagenes": [
+    "/img/06-tienda/tienda31-a.png",
+    "/img/06-tienda/tienda31-b.png",
+    "/img/06-tienda/tienda31-c.png",
+    "/img/06-tienda/tienda31-d.png"
+  ],
+  "categoria": "vhs",
+  "descripcion": "Aventura infantil de los 80 en formato VHS original."
+},
+{
+  "id": 32,
+  "nombre": "DVD - Fight Club - Edición Especial",
+  "precio": 29700,
+  "imagenes": [
+    "/img/06-tienda/tienda32-a.png",
+    "/img/06-tienda/tienda32-b.png",
+    "/img/06-tienda/tienda32-c.png",
+    "/img/06-tienda/tienda32-d.png"
+  ],
+  "categoria": "dvd",
+  "descripcion": "Primera regla: no hables sobre Fight Club. Edición con finales alternativos."
+},
+{
+  "id": 33,
+  "nombre": "Blu-ray - La La Land - Edición 4K",
+  "precio": 41500,
+  "imagenes": [
+    "/img/06-tienda/tienda33-a.png",
+    "/img/06-tienda/tienda33-b.png",
+    "/img/06-tienda/tienda33-c.png",
+    "/img/06-tienda/tienda33-d.png"
+  ],
+  "categoria": "bluray",
+  "descripcion": "Musical ganador del Oscar en impresionante 4K HDR."
+},
+{
+  "id": 34,
+  "nombre": "Vinilo - BSO Amélie",
+  "precio": 46200,
+  "imagenes": [
+    "/img/06-tienda/tienda34-a.png",
+    "/img/06-tienda/tienda34-b.png",
+    "/img/06-tienda/tienda34-c.png",
+    "/img/06-tienda/tienda34-d.png"
+  ],
+  "categoria": "vinilo",
+  "descripcion": "Encantadora banda sonora de Yann Tiersen en vinilo."
+},
+  {
+    "id": 35,
+    "nombre": "Poster - Pulp Fiction",
+    "precio": 80200,
+    "imagenes": [
+      "/img/06-tienda/tienda35-a.png",
+      "/img/06-tienda/tienda35-b.png",
+      "/img/06-tienda/tienda35-c.png",
+      "/img/06-tienda/tienda35-d.png"
+    ],
+    "categoria": "poster",
+    "descripcion": "Iconico póster de la película de Tarantino con John Travolta y Samuel L. Jackson."
+  },
+  {
+    "id": 36,
+    "nombre": "VHS - Beetlejuice",
+    "precio": 71780,
+    "imagenes": [
+      "/img/06-tienda/tienda36-a.png",
+      "/img/06-tienda/tienda36-b.png",
+      "/img/06-tienda/tienda36-c.png",
+      "/img/06-tienda/tienda36-d.png"
+    ],
+    "categoria": "vhs",
+    "descripcion": "Clásico de Tim Burton en su formato VHS original."
+  },
+  {
+    "id": 37,
+    "nombre": "DVD - The Big Lebowski - Edición Coleccionista",
+    "precio": 64350,
+    "imagenes": [
+      "/img/06-tienda/tienda37-a.png",
+      "/img/06-tienda/tienda37-b.png",
+      "/img/06-tienda/tienda37-c.png",
+      "/img/06-tienda/tienda37-d.png"
+    ],
+    "categoria": "dvd",
+    "descripcion": "Edición especial con contenido exclusivo sobre el culto al Dude."
+  },
+  {
+    "id": 38,
+    "nombre": "Blu-ray - Dunkirk - 4K",
+    "precio": 50500,
+    "imagenes": [
+      "/img/06-tienda/tienda38-a.png",
+      "/img/06-tienda/tienda38-b.png",
+      "/img/06-tienda/tienda38-c.png",
+      "/img/06-tienda/tienda38-d.png"
+    ],
+    "categoria": "bluray",
+    "descripcion": "Intenso drama bélico de Christopher Nolan en impresionante 4K."
+  },
+  {
+    "id": 39,
+    "nombre": "Cassette - BSO Footloose",
+    "precio": 39200,
+    "imagenes": [
+      "/img/06-tienda/tienda39-a.png",
+      "/img/06-tienda/tienda39-b.png",
+      "/img/06-tienda/tienda39-c.png",
+      "/img/06-tienda/tienda39-d.png"
+    ],
+    "categoria": "cassette",
+    "descripcion": "Los éxitos de la película que prohibió bailar en formato cassette."
+  },
+  {
+    "id": 40,
+    "nombre": "CD - BSO The Bodyguard",
+    "precio": 60800,
+    "imagenes": [
+      "/img/06-tienda/tienda40-a.png",
+      "/img/06-tienda/tienda40-b.png",
+      "/img/06-tienda/tienda40-c.png",
+      "/img/06-tienda/tienda40-d.png"
+    ],
+    "categoria": "cd",
+    "descripcion": "Incluye el éxito mundial 'I Will Always Love You' de Whitney Houston."
+  },
+  {
+    "id": 41,
+    "nombre": "VHS - Gremlins",
+    "precio": 65900,
+    "imagenes": [
+      "/img/06-tienda/tienda41-a.png",
+      "/img/06-tienda/tienda41-b.png",
+      "/img/06-tienda/tienda41-c.png",
+      "/img/06-tienda/tienda41-d.png"
+    ],
+    "categoria": "vhs",
+    "descripcion": "Clásico de los 80 sobre las reglas para cuidar a tu mogwai."
+  },
+  {
+    "id": 42,
+    "nombre": "DVD - Goodfellas - Edición Aniversario",
+    "precio": 42800,
+    "imagenes": [
+      "/img/06-tienda/tienda42-a.png",
+      "/img/06-tienda/tienda42-b.png",
+      "/img/06-tienda/tienda42-c.png",
+      "/img/06-tienda/tienda42-d.png"
+    ],
+    "categoria": "dvd",
+    "descripcion": "Clásico de Martin Scorsese sobre la mafia con escenas extendidas."
+  },
+  {
+    "id": 43,
+    "nombre": "Blu-ray - The Grand Budapest Hotel - Edición Especial",
+    "precio": 30700,
+    "imagenes": [
+      "/img/06-tienda/tienda43-a.png",
+      "/img/06-tienda/tienda43-b.png",
+      "/img/06-tienda/tienda43-c.png",
+      "/img/06-tienda/tienda43-d.png"
+    ],
+    "categoria": "bluray",
+    "descripcion": "Exquisita comedia de Wes Anderson con diseño visual único."
+  },
+  {
+    "id": 44,
+    "nombre": "Vinilo - BSO Drive",
+    "precio": 43500,
+    "imagenes": [
+      "/img/06-tienda/tienda44-a.png",
+      "/img/06-tienda/tienda44-b.png",
+      "/img/06-tienda/tienda44-c.png",
+      "/img/06-tienda/tienda44-d.png"
+    ],
+    "categoria": "vinilo",
+    "descripcion": "Banda sonora synthwave que definió el estilo de la película."
+  },
+  {
+    "id": 45,
+    "nombre": "Poster - The Godfather",
+    "precio": 47200,
+    "imagenes": [
+      "/img/06-tienda/tienda45-a.png",
+      "/img/06-tienda/tienda45-b.png",
+      "/img/06-tienda/tienda45-c.png",
+      "/img/06-tienda/tienda45-d.png"
+    ],
+    "categoria": "poster",
+    "descripcion": "Póster icónico del clásico de Francis Ford Coppola."
+  },
+  {
+    "id": 46,
+    "nombre": "VHS - The NeverEnding Story",
+    "precio": 82200,
+    "imagenes": [
+      "/img/06-tienda/tienda46-a.png",
+      "/img/06-tienda/tienda46-b.png",
+      "/img/06-tienda/tienda46-c.png",
+      "/img/06-tienda/tienda46-d.png"
+    ],
+    "categoria": "vhs",
+    "descripcion": "Fantasía épica de los 80 en su formato VHS original."
+  },
+  {
+    "id": 47,
+    "nombre": "DVD - The Silence of the Lambs - Edición Coleccionista",
+    "precio": 73780,
+    "imagenes": [
+      "/img/06-tienda/tienda47-a.png",
+      "/img/06-tienda/tienda47-b.png",
+      "/img/06-tienda/tienda47-c.png",
+      "/img/06-tienda/tienda47-d.png"
+    ],
+    "categoria": "dvd",
+    "descripcion": "Thriller psicológico ganador del Oscar con contenido exclusivo."
+  },
+  {
+    "id": 48,
+    "nombre": "Blu-ray - 2001: A Space Odyssey - 4K",
+    "precio": 66350,
+    "imagenes": [
+      "/img/06-tienda/tienda48-a.png",
+      "/img/06-tienda/tienda48-b.png",
+      "/img/06-tienda/tienda48-c.png",
+      "/img/06-tienda/tienda48-d.png"
+    ],
+    "categoria": "bluray",
+    "descripcion": "Obra maestra de Kubrick restaurada en impresionante 4K."
+  },
+  {
+    "id": 49,
+    "nombre": "Cassette - BSO Flashdance",
+    "precio": 51500,
+    "imagenes": [
+      "/img/06-tienda/tienda49-a.png",
+      "/img/06-tienda/tienda49-b.png",
+      "/img/06-tienda/tienda49-c.png",
+      "/img/06-tienda/tienda49-d.png"
+    ],
+    "categoria": "cassette",
+    "descripcion": "Éxitos de los 80 que acompañan la historia de la bailarina."
+  },
+  {
+    "id": 50,
+    "nombre": "CD - BSO Dirty Dancing",
+    "precio": 41200,
+    "imagenes": [
+      "/img/06-tienda/tienda50-a.png",
+      "/img/06-tienda/tienda50-b.png",
+      "/img/06-tienda/tienda50-c.png",
+      "/img/06-tienda/tienda50-d.png"
+    ],
+    "categoria": "cd",
+    "descripcion": "Incluye el clásico '(I've Had) The Time of My Life' y otros éxitos."
+  },
+  {
+    "id": 51,
+    "nombre": "VHS - The Princess Bride",
+    "precio": 62800,
+    "imagenes": [
+      "/img/06-tienda/tienda51-a.png",
+      "/img/06-tienda/tienda51-b.png",
+      "/img/06-tienda/tienda51-c.png",
+      "/img/06-tienda/tienda51-d.png"
+    ],
+    "categoria": "vhs",
+    "descripcion": "Cuento de hadas moderno en su formato VHS original."
+  },
+  {
+    "id": 52,
+    "nombre": "DVD - Gladiator - Edición Extendida",
+    "precio": 67900,
+    "imagenes": [
+      "/img/06-tienda/tienda52-a.png",
+      "/img/06-tienda/tienda52-b.png",
+      "/img/06-tienda/tienda52-c.png",
+      "/img/06-tienda/tienda52-d.png"
+    ],
+    "categoria": "dvd",
+    "descripcion": "Versión extendida con 17 minutos adicionales de metraje."
+  },
+  {
+    "id": 53,
+    "nombre": "Blu-ray - The Shining - 4K",
+    "precio": 43800,
+    "imagenes": [
+      "/img/06-tienda/tienda53-a.png",
+      "/img/06-tienda/tienda53-b.png",
+      "/img/06-tienda/tienda53-c.png",
+      "/img/06-tienda/tienda53-d.png"
+    ],
+    "categoria": "bluray",
+    "descripcion": "Clásico de terror de Kubrick en impresionante 4K HDR."
+  },
+  {
+    "id": 54,
+    "nombre": "Vinilo - BSO A Clockwork Orange",
+    "precio": 31700,
+    "imagenes": [
+      "/img/06-tienda/tienda54-a.png",
+      "/img/06-tienda/tienda54-b.png",
+      "/img/06-tienda/tienda54-c.png",
+      "/img/06-tienda/tienda54-d.png"
+    ],
+    "categoria": "vinilo",
+    "descripcion": "Banda sonora que mezcla música clásica con synth experimental."
+  },
+  {
+    "id": 55,
+    "nombre": "Poster - Alien (El Octavo Pasajero)",
+    "precio": 41500,
+    "imagenes": [
+      "/img/06-tienda/tienda55-a.png",
+      "/img/06-tienda/tienda55-b.png",
+      "/img/06-tienda/tienda55-c.png",
+      "/img/06-tienda/tienda55-d.png"
+    ],
+    "categoria": "poster",
+    "descripcion": "Póster original del clásico de terror espacial."
+  },
+  {
+    "id": 56,
+    "nombre": "VHS - Top Gun",
+    "precio": 48200,
+    "imagenes": [
+      "/img/06-tienda/tienda56-a.png",
+      "/img/06-tienda/tienda56-b.png",
+      "/img/06-tienda/tienda56-c.png",
+      "/img/06-tienda/tienda56-d.png"
+    ],
+    "categoria": "vhs",
+    "descripcion": "Clásico de acción aérea con Tom Cruise en formato VHS."
+  },
+  {
+    "id": 57,
+    "nombre": "DVD - The Dark Knight - Edición Coleccionista",
+    "precio": 84200,
+    "imagenes": [
+      "/img/06-tienda/tienda57-a.png",
+      "/img/06-tienda/tienda57-b.png",
+      "/img/06-tienda/tienda57-c.png",
+      "/img/06-tienda/tienda57-d.png"
+    ],
+    "categoria": "dvd",
+    "descripcion": "Edición especial con escenas eliminadas y documentales exclusivos."
+  },
+  {
+    "id": 58,
+    "nombre": "Blu-ray - Arrival - 4K",
+    "precio": 75780,
+    "imagenes": [
+      "/img/06-tienda/tienda58-a.png",
+      "/img/06-tienda/tienda58-b.png",
+      "/img/06-tienda/tienda58-c.png",
+      "/img/06-tienda/tienda58-d.png"
+    ],
+    "categoria": "bluray",
+    "descripcion": "Ciencia ficción cerebral en impresionante calidad 4K."
+  },
+  {
+    "id": 59,
+    "nombre": "Cassette - BSO Pretty in Pink",
+    "precio": 68350,
+    "imagenes": [
+      "/img/06-tienda/tienda59-a.png",
+      "/img/06-tienda/tienda59-b.png",
+      "/img/06-tienda/tienda59-c.png",
+      "/img/06-tienda/tienda59-d.png"
+    ],
+    "categoria": "cassette",
+    "descripcion": "Banda sonora del clásico teen movie de los 80."
+  },
+  {
+    "id": 60,
+    "nombre": "CD - BSO Trainspotting",
+    "precio": 52500,
+    "imagenes": [
+      "/img/06-tienda/tienda60-a.png",
+      "/img/06-tienda/tienda60-b.png",
+      "/img/06-tienda/tienda60-c.png",
+      "/img/06-tienda/tienda60-d.png"
+    ],
+    "categoria": "cd",
+    "descripcion": "Selección de música electrónica y britpop que define una generación."
+  },
+  {
+    "id": 61,
+    "nombre": "VHS - Labyrinth (Dentro del Laberinto)",
+    "precio": 43200,
+    "imagenes": [
+      "/img/06-tienda/tienda61-a.png",
+      "/img/06-tienda/tienda61-b.png",
+      "/img/06-tienda/tienda61-c.png",
+      "/img/06-tienda/tienda61-d.png"
+    ],
+    "categoria": "vhs",
+    "descripcion": "Fantasía musical con David Bowie en su formato VHS original."
+  },
+  {
+    "id": 62,
+    "nombre": "DVD - The Social Network - Edición Especial",
+    "precio": 64800,
+    "imagenes": [
+      "/img/06-tienda/tienda62-a.png",
+      "/img/06-tienda/tienda62-b.png",
+      "/img/06-tienda/tienda62-c.png",
+      "/img/06-tienda/tienda62-d.png"
+    ],
+    "categoria": "dvd",
+    "descripcion": "Drama sobre la creación de Facebook con comentarios del director."
+  },
+  {
+    "id": 63,
+    "nombre": "Blu-ray - Whiplash - Edición Especial",
+    "precio": 69900,
+    "imagenes": [
+      "/img/06-tienda/tienda63-a.png",
+      "/img/06-tienda/tienda63-b.png",
+      "/img/06-tienda/tienda63-c.png",
+      "/img/06-tienda/tienda63-d.png"
+    ],
+    "categoria": "bluray",
+    "descripcion": "Intenso drama musical con escenas extendidas y final alternativo."
+  },
+  {
+    "id": 64,
+    "nombre": "Vinilo - BSO The Graduate",
+    "precio": 44800,
+    "imagenes": [
+      "/img/06-tienda/tienda64-a.png",
+      "/img/06-tienda/tienda64-b.png",
+      "/img/06-tienda/tienda64-c.png",
+      "/img/06-tienda/tienda64-d.png"
+    ],
+    "categoria": "vinilo",
+    "descripcion": "Canciones de Simon & Garfunkel que definieron esta película."
+  },
+  {
+    "id": 65,
+    "nombre": "Poster - Casablanca",
+    "precio": 32700,
+    "imagenes": [
+      "/img/06-tienda/tienda65-a.png",
+      "/img/06-tienda/tienda65-b.png",
+      "/img/06-tienda/tienda65-c.png",
+      "/img/06-tienda/tienda65-d.png"
+    ],
+    "categoria": "poster",
+    "descripcion": "Póster del clásico romántico con Humphrey Bogart e Ingrid Bergman."
+  },
+  {
+    "id": 66,
+    "nombre": "VHS - The Blues Brothers",
+    "precio": 49500,
+    "imagenes": [
+      "/img/06-tienda/tienda66-a.png",
+      "/img/06-tienda/tienda66-b.png",
+      "/img/06-tienda/tienda66-c.png",
+      "/img/06-tienda/tienda66-d.png"
+    ],
+    "categoria": "vhs",
+    "descripcion": "Comedia musical con las mejores actuaciones de blues en VHS."
+  },
+  {
+    "id": 67,
+    "nombre": "DVD - No Country for Old Men - Edición Coleccionista",
+    "precio": 49200,
+    "imagenes": [
+      "/img/06-tienda/tienda67-a.png",
+      "/img/06-tienda/tienda67-b.png",
+      "/img/06-tienda/tienda67-c.png",
+      "/img/06-tienda/tienda67-d.png"
+    ],
+    "categoria": "dvd",
+    "descripcion": "Thriller de los Coen ganador del Oscar con contenido exclusivo."
+  },
+  {
+    "id": 68,
+    "nombre": "Blu-ray - Parasite - 4K",
+    "precio": 86200,
+    "imagenes": [
+      "/img/06-tienda/tienda68-a.png",
+      "/img/06-tienda/tienda68-b.png",
+      "/img/06-tienda/tienda68-c.png",
+      "/img/06-tienda/tienda68-d.png"
+    ],
+    "categoria": "bluray",
+    "descripcion": "Obra maestra coreana ganadora del Oscar en impresionante 4K."
+  },
+  {
+    "id": 69,
+    "nombre": "Cassette - BSO Beverly Hills Cop",
+    "precio": 77780,
+    "imagenes": [
+      "/img/06-tienda/tienda69-a.png",
+      "/img/06-tienda/tienda69-b.png",
+      "/img/06-tienda/tienda69-c.png",
+      "/img/06-tienda/tienda69-d.png"
+    ],
+    "categoria": "cassette",
+    "descripcion": "Banda sonora llena de funk y synth-pop de los 80."
+  },
+  {
+    "id": 70,
+    "nombre": "CD - BSO Romeo + Juliet",
+    "precio": 70350,
+    "imagenes": [
+      "/img/06-tienda/tienda70-a.png",
+      "/img/06-tienda/tienda70-b.png",
+      "/img/06-tienda/tienda70-c.png",
+      "/img/06-tienda/tienda70-d.png"
+    ],
+    "categoria": "cd",
+    "descripcion": "Mezcla de pop, rock y música clásica para la versión moderna de Shakespeare."
+  },
+  {
+    "id": 71,
+    "nombre": "VHS - The Rocky Horror Picture Show",
+    "precio": 54500,
+    "imagenes": [
+        "/img/06-tienda/tienda71-a.png",
+        "/img/06-tienda/tienda71-b.png",
+        "/img/06-tienda/tienda71-c.png",
+        "/img/06-tienda/tienda71-d.png"
+    ],
+    "categoria": "vhs",
+    "descripcion": "Culto musical de medianoche en su formato VHS original."
+},
+{
+    "id": 72,
+    "nombre": "DVD - The Fifth Element - Edición Especial",
+    "precio": 45200,
+    "imagenes": [
+        "/img/06-tienda/tienda72-a.png",
+        "/img/06-tienda/tienda72-b.png",
+        "/img/06-tienda/tienda72-c.png",
+        "/img/06-tienda/tienda72-d.png"
+    ],
+    "categoria": "dvd",
+    "descripcion": "Ciencia ficción colorida de Luc Besson con contenido adicional."
+},
+{
+    "id": 73,
+    "nombre": "Blu-ray - Blade Runner - Edición Final",
+    "precio": 66800,
+    "imagenes": [
+        "/img/06-tienda/tienda73-a.png",
+        "/img/06-tienda/tienda73-b.png",
+        "/img/06-tienda/tienda73-c.png",
+        "/img/06-tienda/tienda73-d.png"
+    ],
+    "categoria": "bluray",
+    "descripcion": "Versión definitiva aprobada por Ridley Scott en 4K."
+},
+{
+    "id": 74,
+    "nombre": "Vinilo - BSO Lost in Translation",
+    "precio": 71900,
+    "imagenes": [
+        "/img/06-tienda/tienda74-a.png",
+        "/img/06-tienda/tienda74-b.png",
+        "/img/06-tienda/tienda74-c.png",
+        "/img/06-tienda/tienda74-d.png"
+    ],
+    "categoria": "vinilo",
+    "descripcion": "Atmósfera musical dream-pop que complementa la película."
+},
+{
+    "id": 75,
+    "nombre": "Poster - Psycho (Psicosis)",
+    "precio": 45800,
+    "imagenes": [
+        "/img/06-tienda/tienda75-a.png",
+        "/img/06-tienda/tienda75-b.png",
+        "/img/06-tienda/tienda75-c.png",
+        "/img/06-tienda/tienda75-d.png"
+    ],
+    "categoria": "poster",
+    "descripcion": "Póster del clásico de terror de Alfred Hitchcock."
+},
+{
+    "id": 76,
+    "nombre": "VHS - The Terminator",
+    "precio": 33700,
+    "imagenes": [
+        "/img/06-tienda/tienda76-a.png",
+        "/img/06-tienda/tienda76-b.png",
+        "/img/06-tienda/tienda76-c.png",
+        "/img/06-tienda/tienda76-d.png"
+    ],
+    "categoria": "vhs",
+    "descripcion": "Clásico de ciencia ficción con Arnold Schwarzenegger en VHS."
+},
+{
+    "id": 77,
+    "nombre": "DVD - The Godfather Part II - Edición Coleccionista",
+    "precio": 47500,
+    "imagenes": [
+        "/img/06-tienda/tienda77-a.png",
+        "/img/06-tienda/tienda77-b.png",
+        "/img/06-tienda/tienda77-c.png",
+        "/img/06-tienda/tienda77-d.png"
+    ],
+    "categoria": "dvd",
+    "descripcion": "Secuela considerada mejor que el original, con contenido exclusivo."
+},
+{
+    "id": 78,
+    "nombre": "Blu-ray - Her - Edición Especial",
+    "precio": 51200,
+    "imagenes": [
+        "/img/06-tienda/tienda78-a.png",
+        "/img/06-tienda/tienda78-b.png",
+        "/img/06-tienda/tienda78-c.png",
+        "/img/06-tienda/tienda78-d.png"
+    ],
+    "categoria": "bluray",
+    "descripcion": "Conmovedora historia de amor futurista en alta definición."
+},
+{
+    "id": 79,
+    "nombre": "Cassette - BSO Purple Rain",
+    "precio": 86200,
+    "imagenes": [
+        "/img/06-tienda/tienda79-a.png",
+        "/img/06-tienda/tienda79-b.png",
+        "/img/06-tienda/tienda79-c.png",
+        "/img/06-tienda/tienda79-d.png"
+    ],
+    "categoria": "cassette",
+    "descripcion": "Banda sonora de Prince para su película semiautobiográfica."
+},
+{
+    "id": 80,
+    "nombre": "CD - BSO O Brother, Where Art Thou?",
+    "precio": 77780,
+    "imagenes": [
+        "/img/06-tienda/tienda80-a.png",
+        "/img/06-tienda/tienda80-b.png",
+        "/img/06-tienda/tienda80-c.png",
+        "/img/06-tienda/tienda80-d.png"
+    ],
+    "categoria": "cd",
+    "descripcion": "Música folk y bluegrass que revivió el género."
+},
+{
+    "id": 81,
+    "nombre": "VHS - Die Hard (Duro de Matar)",
+    "precio": 70350,
+    "imagenes": [
+        "/img/06-tienda/tienda81-a.png",
+        "/img/06-tienda/tienda81-b.png",
+        "/img/06-tienda/tienda81-c.png",
+        "/img/06-tienda/tienda81-d.png"
+    ],
+    "categoria": "vhs",
+    "descripcion": "Clásico de acción navideño en su formato VHS original."
+},
+{
+    "id": 82,
+    "nombre": "DVD - The Grand Budapest Hotel - Edición Especial",
+    "precio": 54500,
+    "imagenes": [
+        "/img/06-tienda/tienda82-a.png",
+        "/img/06-tienda/tienda82-b.png",
+        "/img/06-tienda/tienda82-c.png",
+        "/img/06-tienda/tienda82-d.png"
+    ],
+    "categoria": "dvd",
+    "descripcion": "Exquisita comedia de Wes Anderson con contenido adicional."
+},
+{
+    "id": 83,
+    "nombre": "Blu-ray - The Shape of Water - 4K",
+    "precio": 44200,
+    "imagenes": [
+        "/img/06-tienda/tienda83-a.png",
+        "/img/06-tienda/tienda83-b.png",
+        "/img/06-tienda/tienda83-c.png",
+        "/img/06-tienda/tienda83-d.png"
+    ],
+    "categoria": "bluray",
+    "descripcion": "Cuento de hadas para adultos ganador del Oscar en 4K."
+},
+{
+    "id": 84,
+    "nombre": "Vinilo - BSO The Virgin Suicides",
+    "precio": 65800,
+    "imagenes": [
+        "/img/06-tienda/tienda84-a.png",
+        "/img/06-tienda/tienda84-b.png",
+        "/img/06-tienda/tienda84-c.png",
+        "/img/06-tienda/tienda84-d.png"
+    ],
+    "categoria": "vinilo",
+    "descripcion": "Música etérea de Air para el debut de Sofia Coppola."
+},
+{
+    "id": 85,
+    "nombre": "Poster - Back to the Future",
+    "precio": 70900,
+    "imagenes": [
+        "/img/06-tienda/tienda85-a.png",
+        "/img/06-tienda/tienda85-b.png",
+        "/img/06-tienda/tienda85-c.png",
+        "/img/06-tienda/tienda85-d.png"
+    ],
+    "categoria": "poster",
+    "descripcion": "Póster del clásico de viajes en el tiempo con Michael J. Fox."
+},
+{
+    "id": 86,
+    "nombre": "VHS - Ghostbusters (Los Cazafantasmas)",
+    "precio": 42800,
+    "imagenes": [
+        "/img/06-tienda/tienda86-a.png",
+        "/img/06-tienda/tienda86-b.png",
+        "/img/06-tienda/tienda86-c.png",
+        "/img/06-tienda/tienda86-d.png"
+    ],
+    "categoria": "vhs",
+    "descripcion": "Comedia sobrenatural de los 80 en formato VHS original."
+},
+{
+  "id": 87,
+  "nombre": "DVD - The Truman Show - Edición Especial",
+  "precio": 31700,
+  "imagenes": [
+      "/img/06-tienda/tienda87-a.png",
+      "/img/06-tienda/tienda87-b.png",
+      "/img/06-tienda/tienda87-c.png",
+      "/img/06-tienda/tienda87-d.png"
+  ],
+  "categoria": "dvd",
+  "descripcion": "Sátira sobre la televisión y la realidad con Jim Carrey."
+},
+{
+  "id": 88,
+  "nombre": "Blu-ray - Moonlight - Edición 4K",
+  "precio": 45500,
+  "imagenes": [
+      "/img/06-tienda/tienda88-a.png",
+      "/img/06-tienda/tienda88-b.png",
+      "/img/06-tienda/tienda88-c.png",
+      "/img/06-tienda/tienda88-d.png"
+  ],
+  "categoria": "bluray",
+  "descripcion": "Drama ganador del Oscar en impresionante calidad 4K."
+},
+{
+  "id": 89,
+  "nombre": "Cassette - BSO The Crow",
+  "precio": 52200,
+  "imagenes": [
+      "/img/06-tienda/tienda89-a.png",
+      "/img/06-tienda/tienda89-b.png",
+      "/img/06-tienda/tienda89-c.png",
+      "/img/06-tienda/tienda89-d.png"
+  ],
+  "categoria": "cassette",
+  "descripcion": "Banda sonora de rock alternativo de los 90."
+},
+{
+  "id": 90,
+  "nombre": "CD - BSO Almost Famous",
+  "precio": 89200,
+  "imagenes": [
+      "/img/06-tienda/tienda90-a.png",
+      "/img/06-tienda/tienda90-b.png",
+      "/img/06-tienda/tienda90-c.png",
+      "/img/06-tienda/tienda90-d.png"
+  ],
+  "categoria": "cd",
+  "descripcion": "Clásicos del rock que acompañan esta historia sobre periodismo musical."
+},
+{
+  "id": 91,
+  "nombre": "VHS - The Lost Boys",
+  "precio": 78780,
+  "imagenes": [
+      "/img/06-tienda/tienda91-a.png",
+      "/img/06-tienda/tienda91-b.png",
+      "/img/06-tienda/tienda91-c.png",
+      "/img/06-tienda/tienda91-d.png"
+  ],
+  "categoria": "vhs",
+  "descripcion": "Culto de vampiros adolescentes de los 80 en VHS."
+},
+{
+  "id": 92,
+  "nombre": "DVD - Eternal Sunshine of the Spotless Mind - Edición Especial",
+  "precio": 72350,
+  "imagenes": [
+      "/img/06-tienda/tienda92-a.png",
+      "/img/06-tienda/tienda92-b.png",
+      "/img/06-tienda/tienda92-c.png",
+      "/img/06-tienda/tienda92-d.png"
+  ],
+  "categoria": "dvd",
+  "descripcion": "Innovadora historia de amor con Jim Carrey y Kate Winslet."
+},
+{
+  "id": 93,
+  "nombre": "Blu-ray - Get Out - 4K",
+  "precio": 56500,
+  "imagenes": [
+      "/img/06-tienda/tienda93-a.png",
+      "/img/06-tienda/tienda93-b.png",
+      "/img/06-tienda/tienda93-c.png",
+      "/img/06-tienda/tienda93-d.png"
+  ],
+  "categoria": "bluray",
+  "descripcion": "Thriller social ganador del Oscar en impresionante 4K."
+},
+{
+  "id": 94,
+  "nombre": "Vinilo - BSO Drive",
+  "precio": 46200,
+  "imagenes": [
+      "/img/06-tienda/tienda94-a.png",
+      "/img/06-tienda/tienda94-b.png",
+      "/img/06-tienda/tienda94-c.png",
+      "/img/06-tienda/tienda94-d.png"
+  ],
+  "categoria": "vinilo",
+  "descripcion": "Banda sonora synthwave que definió el estilo de la película."
+},
+{
+  "id": 95,
+  "nombre": "Poster - Pulp Fiction",
+  "precio": 68800,
+  "imagenes": [
+      "/img/06-tienda/tienda95-a.png",
+      "/img/06-tienda/tienda95-b.png",
+      "/img/06-tienda/tienda95-c.png",
+      "/img/06-tienda/tienda95-d.png"
+  ],
+  "categoria": "poster",
+  "descripcion": "Iconico póster con John Travolta y Samuel L. Jackson."
+},
+{
+  "id": 96,
+  "nombre": "VHS - Beetlejuice",
+  "precio": 72900,
+  "imagenes": [
+      "/img/06-tienda/tienda96-a.png",
+      "/img/06-tienda/tienda96-b.png",
+      "/img/06-tienda/tienda96-c.png",
+      "/img/06-tienda/tienda96-d.png"
+  ],
+  "categoria": "vhs",
+  "descripcion": "Clásico de Tim Burton en su formato VHS original."
+},
+{
+  "id": 97,
+  "nombre": "DVD - The Big Lebowski - Edición Coleccionista",
+  "precio": 43800,
+  "imagenes": [
+      "/img/06-tienda/tienda97-a.png",
+      "/img/06-tienda/tienda97-b.png",
+      "/img/06-tienda/tienda97-c.png",
+      "/img/06-tienda/tienda97-d.png"
+  ],
+  "categoria": "dvd",
+  "descripcion": "Edición especial con contenido exclusivo sobre el culto al Dude."
+},
+{
+  "id": 98,
+  "nombre": "Blu-ray - Dunkirk - 4K",
+  "precio": 30700,
+  "imagenes": [
+      "/img/06-tienda/tienda98-a.png",
+      "/img/06-tienda/tienda98-b.png",
+      "/img/06-tienda/tienda98-c.png",
+      "/img/06-tienda/tienda98-d.png"
+  ],
+  "categoria": "bluray",
+  "descripcion": "Intenso drama bélico de Christopher Nolan en impresionante 4K."
+},
+{
+  "id": 99,
+  "nombre": "Cassette - BSO Footloose",
+  "precio": 48500,
+  "imagenes": [
+      "/img/06-tienda/tienda99-a.png",
+      "/img/06-tienda/tienda99-b.png",
+      "/img/06-tienda/tienda99-c.png",
+      "/img/06-tienda/tienda99-d.png"
+  ],
+  "categoria": "cassette",
+  "descripcion": "Los éxitos de la película que prohibió bailar en formato cassette."
+},
+{
+  "id": 100,
+  "nombre": "CD - BSO The Bodyguard",
+  "precio": 50200,
+  "imagenes": [
+      "/img/06-tienda/tienda100-a.png",
+      "/img/06-tienda/tienda100-b.png",
+      "/img/06-tienda/tienda100-c.png",
+      "/img/06-tienda/tienda100-d.png"
+  ],
+  "categoria": "cd",
+  "descripcion": "Incluye el éxito mundial 'I Will Always Love You' de Whitney Houston."
+}
+]

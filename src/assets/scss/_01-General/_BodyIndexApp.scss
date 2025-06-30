@@ -1,0 +1,318 @@
+/* ---------------------------------- */
+/* ESTILOS GENERALES VHS VIDEOCLUB */
+/* ---------------------------------- */
+
+/* Fuentes VHS */
+@font-face {
+  font-family: 'VCR OSD Mono';
+  src: url('/fonts/VCR_OSD_MONO.ttf') format('truetype');
+  font-display: swap;
+}
+
+/* Reset VHS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: none;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  -webkit-tap-highlight-color: transparent;
+
+
+  &::selection {
+    background: #ffd800;
+    color: #0033a0;
+    text-shadow: 0 0 5px #fff;
+  }
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base VHS */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: #fff;
+  font-family: 'VCR OSD Mono', monospace;
+
+  line-height: 1.4;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  
+}
+
+/* Contenedor principal VHS */
+.vhs-container {
+  position: relative;
+  min-height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  // background: linear-gradient(135deg, #001a4d, #0033a0); /* Gradiente principal */
+  overflow: hidden;
+  transition: all 0.3s ease;
+
+  &.rewinding {
+    transform: scale(0.98);
+    filter: brightness(1.2) contrast(0.9) saturate(1.2);
+  }
+}
+
+/* Efectos VHS */
+.vhs-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    linear-gradient(rgba(0, 20, 80, 0.1) 50%, rgba(0, 20, 80, 0.7) 50%),
+    linear-gradient(90deg, rgba(255,0,0,0.05) 0%, rgba(255,215,0,0.03) 50%, rgba(255,0,0,0.05) 100%);
+  background-size: 100% 4px, 200% 200%;
+  z-index: 1;
+  pointer-events: none;
+  animation: vhs-flicker 10s infinite;
+}
+
+.vhs-scanlines {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(255, 255, 255, 0.03) 0.5%,
+    transparent 1%
+  );
+  background-size: 100% 8px;
+  pointer-events: none;
+  z-index: 2;
+  animation: scanline 8s linear infinite;
+}
+
+.vhs-noise {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/img/vhs-noise.gif');
+  opacity: 0.06;
+  pointer-events: none;
+  z-index: 3;
+  mix-blend-mode: overlay;
+}
+
+.vhs-glitch {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/img/vhs-glitch.gif');
+  opacity: 0;
+  pointer-events: none;
+  z-index: 4;
+  animation: glitch 30s infinite;
+}
+
+/* Divisor estilo cinta VHS */
+.vhs-divider {
+  height: 4px;
+  margin: 1rem 0;
+  background: linear-gradient(90deg, #001a4d, #0033a0, #001a4d);
+  position: relative;
+  z-index: 5;
+  box-shadow: 
+    0 2px 5px rgba(255, 216, 0, 0.3),
+    inset 0 0 10px rgba(0, 0, 0, 0.5);
+
+  .vhs-tape {
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 20px;
+    background: #001a4d;
+    border: 2px solid #ffd800;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(255, 216, 0, 0.5);
+
+    &::before {
+      content: '';
+      width: 40px;
+      height: 8px;
+      background: #ffd800;
+      border-radius: 2px;
+      box-shadow: 0 0 5px rgba(255, 216, 0, 0.7);
+    }
+  }
+}
+
+/* Componentes VHS */
+.vhs-button {
+  display: inline-block;
+  background: #001a4d;
+  color: #ffd800;
+  border: 2px solid #ffd800;
+  padding: 0.5rem 1.5rem;
+  font-family: 'VCR OSD Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  transition: all 0.2s ease;
+  text-shadow: 0 0 5px rgba(255, 216, 0, 0.5);
+  box-shadow: 0 0 0 rgba(255, 216, 0, 0);
+
+  &:hover {
+    background: #ffd800;
+    color: #0033a0;
+    box-shadow: 0 0 15px rgba(255, 216, 0, 0.7);
+    text-shadow: none;
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+/* Alertas VHS */
+.vhs-popup {
+  border: 3px solid #ffd800 !important;
+  box-shadow: 
+    0 0 20px rgba(255, 216, 0, 0.7),
+    inset 0 0 20px rgba(0, 0, 0, 0.5) !important;
+  background: #001a4d !important;
+  max-width: 80% !important;
+  border-radius: 0 !important;
+  padding: 2rem !important;
+}
+
+.vhs-alert-title {
+  font-family: 'VCR OSD Mono', monospace !important;
+  color: #ffd800 !important;
+  font-size: 1.8rem !important;
+  letter-spacing: 2px !important;
+  text-shadow: 0 0 10px rgba(255, 216, 0, 0.7) !important;
+}
+
+.vhs-alert-content {
+  font-family: 'VCR OSD Mono', monospace !important;
+  color: #fff !important;
+  font-size: 1.2rem !important;
+  line-height: 1.5 !important;
+}
+
+.vhs-alert-button {
+  font-family: 'VCR OSD Mono', monospace !important;
+  letter-spacing: 1px !important;
+}
+
+/* Animaciones VHS */
+@keyframes scanline {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 100%; }
+}
+
+@keyframes glitch {
+  0%, 100% { opacity: 0; }
+  2%, 96% { opacity: 0.02; }
+  4%, 94% { opacity: 0.03; }
+  6%, 92% { opacity: 0.01; }
+  8%, 90% { opacity: 0; }
+  50% { opacity: 0.05; }
+}
+
+@keyframes vhs-flicker {
+  0%, 100% { opacity: 0.9; }
+  1%, 99% { opacity: 0.8; }
+  2%, 98% { opacity: 0.95; }
+}
+
+@keyframes vhs-tracking {
+  0% { transform: translateY(0); }
+  20% { transform: translateY(-2px); }
+  40% { transform: translateY(1px); }
+  60% { transform: translateY(-1px); }
+  80% { transform: translateY(2px); }
+  100% { transform: translateY(0); }
+}
+
+/* Responsive VHS */
+@media (min-width: 768px) {
+  .vhs-divider {
+    height: 6px;
+    margin: 1.5rem 0;
+
+    .vhs-tape {
+      width: 80px;
+      height: 25px;
+      top: -12px;
+
+      &::before {
+        width: 60px;
+        height: 10px;
+      }
+    }
+  }
+
+  .vhs-button {
+    padding: 0.6rem 1.8rem;
+    font-size: 1rem;
+  }
+
+  .vhs-popup {
+    max-width: 60% !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .vhs-divider {
+    height: 8px;
+    margin: 2rem 0;
+  }
+
+  .vhs-noise {
+    opacity: 0.08;
+  }
+
+  .vhs-overlay {
+    background-size: 100% 6px, 200% 200%;
+  }
+}
+
+/* Efectos especiales */
+.vhs-text {
+  text-shadow: 
+    0 0 5px rgba(255, 216, 0, 0.5),
+    1px 1px 0 #0033a0;
+}
+
+.vhs-box {
+  border: 2px solid #ffd800;
+  box-shadow: 
+    0 0 15px rgba(255, 216, 0, 0.5),
+    inset 0 0 15px rgba(0, 0, 0, 0.5);
+  background: rgba(0, 26, 77, 0.7);
+}

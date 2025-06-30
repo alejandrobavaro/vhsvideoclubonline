@@ -1,0 +1,221 @@
+.blockbuster-modal-overlay {
+  position: fixed;
+  top: 80px; /* Ajuste para posición debajo del header */
+  left: 0;
+  width: 100%;
+  height: calc(100% - 80px); /* Ajuste de altura */
+  background: rgba(#0a1a3a, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Asegurarse que está debajo del header */
+  animation: blockbuster-fadeIn 0.3s ease;
+}
+
+.film-strip-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+    linear-gradient(90deg, rgba(255, 209, 0, 0.05), rgba(255, 255, 255, 0.02), rgba(255, 209, 0, 0.05));
+  background-size: 100% 4px, 4px 100%;
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.blockbuster-modal-content {
+  position: relative;
+  background-color: #0a1a3a;
+  border: 3px solid #ffd100;
+  border-radius: 4px;
+  padding: 20px;
+  max-width: 90%;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: blockbuster-scaleUp 0.3s ease;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.film-strip-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: repeating-linear-gradient(
+    90deg,
+    #0a1a3a,
+    #0a1a3a 15px,
+    #ffd100 15px,
+    #ffd100 30px
+  );
+}
+
+.blockbuster-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #122b5a;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ffd100;
+  z-index: 10;
+  
+  &:hover {
+    background-color: #ffd100;
+    color: #0a1a3a;
+  }
+}
+
+.movie-frame {
+  position: relative;
+  width: 80vw;
+  max-width: 600px;
+  height: 80vw;
+  max-height: 600px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ffd100;
+  box-shadow: 0 0 10px rgba(255, 209, 0, 0.5);
+}
+
+.blockbuster-modal-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.film-reel {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: #122b5a;
+  border-radius: 50%;
+  border: 2px solid #ffd100;
+  z-index: 2;
+}
+
+.blockbuster-prev-button,
+.blockbuster-next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #122b5a;
+  color: #ffd100;
+  border: 2px solid #ffd100;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  &:hover {
+    background-color: #ffd100;
+    color: #0a1a3a;
+  }
+}
+
+.blockbuster-prev-button {
+  left: 10px;
+}
+
+.blockbuster-next-button {
+  right: 10px;
+}
+
+.image-counter {
+  position: absolute;
+  bottom: 15px;
+  background-color: rgba(10, 26, 58, 0.8);
+  color: #ffd100;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  border: 1px solid #ffd100;
+}
+
+// Animaciones
+@keyframes blockbuster-fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes blockbuster-scaleUp {
+  from { transform: scale(0.9); }
+  to { transform: scale(1); }
+}
+
+// Responsive
+@media (min-width: 768px) {
+  .blockbuster-modal-content {
+    padding: 25px;
+  }
+  
+  .movie-frame {
+    width: 70vw;
+    height: 70vw;
+  }
+  
+  .blockbuster-prev-button,
+  .blockbuster-next-button {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .movie-frame {
+    width: 60vw;
+    height: 60vw;
+    max-width: 700px;
+    max-height: 700px;
+  }
+  
+  .blockbuster-close-button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.8rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .blockbuster-modal-overlay {
+    top: 70px; /* Ajuste para móvil */
+    height: calc(100% - 70px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .blockbuster-modal-overlay {
+    top: 90px; /* Ajuste para desktop */
+    height: calc(100% - 90px);
+  }
+}

@@ -1,0 +1,214 @@
+// Variables de estilo Blockbuster
+$bb-blue-dark: #0a1a3a;
+$bb-blue-medium: #122b5a;
+$bb-yellow: #ffd100;
+$bb-white: #ffffff;
+$bb-black: #000000;
+
+// Estilos generales
+.blockbuster-auth-system {
+  font-family: 'Arial', sans-serif;
+  background-color: $bb-blue-dark;
+  min-height: 100vh;
+}
+
+.blockbuster-auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: $bb-blue-dark;
+}
+
+// Tarjeta de Login/Register
+.blockbuster-login-card,
+.blockbuster-register-card {
+  background-color: $bb-blue-medium;
+  border: 2px solid $bb-yellow;
+  border-radius: 4px;
+  padding: 25px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.film-strip-border {
+  border: 1px dashed $bb-yellow;
+  padding: 20px;
+}
+
+.card-title, .card-header h2 {
+  color: $bb-yellow;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.card-image {
+  text-align: center;
+  margin: 20px 0;
+  
+  img {
+    max-width: 150px;
+    filter: drop-shadow(0 0 5px rgba($bb-yellow, 0.5));
+  }
+}
+
+.film-strip-decoration {
+  height: 6px;
+  background: repeating-linear-gradient(
+    90deg,
+    $bb-blue-dark,
+    $bb-blue-dark 15px,
+    $bb-yellow 15px,
+    $bb-yellow 30px
+  );
+  margin: 10px auto;
+  width: 80%;
+}
+
+// Formularios
+.blockbuster-auth-form {
+  .form-group {
+    margin-bottom: 20px;
+
+    label {
+      display: block;
+      color: $bb-yellow;
+      margin-bottom: 8px;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+    }
+  }
+
+  .blockbuster-input {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba($bb-black, 0.5);
+    border: 1px solid $bb-yellow;
+    color: $bb-white;
+    font-family: 'Arial', sans-serif;
+    
+    &:focus {
+      outline: none;
+      border-color: $bb-white;
+      box-shadow: 0 0 5px $bb-yellow;
+    }
+  }
+
+  .blockbuster-button {
+    width: 100%;
+    padding: 12px;
+    background-color: $bb-blue-dark;
+    color: $bb-yellow;
+    border: 2px solid $bb-yellow;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    
+    &:hover {
+      background-color: $bb-yellow;
+      color: $bb-blue-dark;
+    }
+  }
+}
+
+.card-footer {
+  color: $bb-white;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+// Spinner
+.blockbuster-loading-spinner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba($bb-blue-dark, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  .film-reel-spinner {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: $bb-blue-medium;
+    border: 3px solid $bb-yellow;
+    position: relative;
+    animation: blockbuster-spin 1s linear infinite;
+    
+    .film-strip {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      background: 
+        linear-gradient(to right, $bb-yellow, $bb-yellow) 0 0 / 100% 2px,
+        linear-gradient(to bottom, $bb-yellow, $bb-yellow) 0 0 / 2px 100%;
+      background-repeat: no-repeat;
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .reel-center {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: $bb-yellow;
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 2px solid $bb-blue-dark;
+    }
+  }
+
+  .loading-text {
+    color: $bb-yellow;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: blockbuster-pulse 1.5s ease-in-out infinite;
+  }
+}
+
+// Animaciones
+@keyframes blockbuster-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes blockbuster-pulse {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .blockbuster-login-card,
+  .blockbuster-register-card {
+    padding: 15px;
+    max-width: 95%;
+  }
+
+  .card-title, .card-header h2 {
+    font-size: 1.3rem;
+  }
+}
