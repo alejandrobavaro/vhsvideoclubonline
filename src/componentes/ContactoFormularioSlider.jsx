@@ -137,7 +137,7 @@ const ContactoFormularioSlider = () => {
           
           <div className="vhs-gif-container">
             <img 
-              src="../../public/img/09-gif/1.gif" 
+              src="../../img/09-gif/1.gif" 
               alt="Animación de alquiler VHS retro"
               className="vhs-animated-gif"
             />
