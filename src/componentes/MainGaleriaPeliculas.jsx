@@ -24,15 +24,17 @@ const MainGaleriaPeliculas = () => {
     fetchPeliculas();
   }, []);
 
-  if (loading) return <div className="loading">CARGANDO CATÁLOGO...</div>;
-  if (error) return <div className="error">ERROR: {error}</div>;
+  if (loading) return <div className="main-loading">CARGANDO CATÁLOGO...</div>;
+  if (error) return <div className="main-error">ERROR: {error}</div>;
 
   return (
-    <section className="main-galeria-peliculas">
-      <h2 className="main-galeria-peliculas__titulo">CATÁLOGO COMPLETO</h2>
-      <div className="main-galeria-peliculas__grid">
+    <section className="main-galeria">
+      <h2 className="main-galeria-title">CATÁLOGO COMPLETO</h2>
+      <div className="main-galeria-grid">
         {peliculas.map(pelicula => (
-          <MainPeliculaCard key={pelicula.id} pelicula={pelicula} />
+          <div key={pelicula.id} className="main-pelicula-container">
+            <MainPeliculaCard pelicula={pelicula} />
+          </div>
         ))}
       </div>
     </section>

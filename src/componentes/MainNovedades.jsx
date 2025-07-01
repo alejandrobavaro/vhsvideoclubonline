@@ -24,17 +24,19 @@ const MainNovedades = () => {
     fetchPeliculas();
   }, []);
 
-  if (loading) return <div className="loading">CARGANDO NOVEDADES...</div>;
-  if (error) return <div className="error">ERROR: {error}</div>;
+  if (loading) return <div className="main-loading">CARGANDO NOVEDADES...</div>;
+  if (error) return <div className="main-error">ERROR: {error}</div>;
 
   const novedades = peliculas.filter(pelicula => pelicula.novedad);
 
   return (
     <section className="main-novedades">
-      <h2 className="main-novedades__titulo">NOVEDADES</h2>
-      <div className="main-novedades__grid">
+      <h2 className="main-novedades-title">NOVEDADES</h2>
+      <div className="main-novedades-grid">
         {novedades.map(pelicula => (
-          <MainPeliculaCard key={pelicula.id} pelicula={pelicula} />
+          <div key={pelicula.id} className="main-pelicula-container">
+            <MainPeliculaCard pelicula={pelicula} />
+          </div>
         ))}
       </div>
     </section>

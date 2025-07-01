@@ -64,8 +64,8 @@ const MainPublicidadSlider = () => {
   function SampleNextArrow(props) {
     const { onClick } = props;
     return (
-      <div className="vhs-arrow next" onClick={onClick}>
-        <span>❯</span>
+      <div className="vhs-slider-arrow next" onClick={onClick}>
+        <i className="bi bi-chevron-right"></i>
       </div>
     );
   }
@@ -73,8 +73,8 @@ const MainPublicidadSlider = () => {
   function SamplePrevArrow(props) {
     const { onClick } = props;
     return (
-      <div className="vhs-arrow prev" onClick={onClick}>
-        <span>❮</span>
+      <div className="vhs-slider-arrow prev" onClick={onClick}>
+        <i className="bi bi-chevron-left"></i>
       </div>
     );
   }
@@ -84,49 +84,51 @@ const MainPublicidadSlider = () => {
   }
 
   return (
-    <div className="vhs-publicidad-container">
-      <div className="vhs-tape-top"></div>
+    <section className="vhs-publicidad">
+      <div className="vhs-publicidad-header">
+        <h2 className="vhs-publicidad-title">OFERTAS ESPECIALES</h2>
+        <div className="vhs-divider"></div>
+      </div>
       
-      <div className="vhs-slider-wrapper">
-        <h2 className="vhs-section-title">
-          <span className="vhs-title-bg">OFERTAS ESPECIALES</span>
-        </h2>
-        
-        <div className="vhs-main-slider">
-          <Slider {...settings}>
-            {productos.map((producto) => (
-              <div key={producto.id} className="vhs-slide">
-                <div className="vhs-slide-content">
-                  <img
-                    src={producto.imagenes[0]}
-                    alt={producto.nombre}
-                    className="vhs-slide-image"
-                  />
-                  <div className="vhs-price-tag">
-                    <span className="vhs-price-text">${producto.precio.toLocaleString()}</span>
-                  </div>
-                  <div className="vhs-sticker">OFERTA</div>
-                </div>
-              </div>
-            ))}
-          </Slider>
-        </div>
-
-        <h3 className="vhs-mini-title">NUESTROS TÍTULOS DESTACADOS</h3>
-        <div className="vhs-thumbnails">
+      <div className="vhs-slider-container">
+        <Slider {...settings}>
           {productos.map((producto) => (
-            <div key={producto.id} className="vhs-thumbnail">
+            <div key={producto.id} className="vhs-slide-item">
+              <div className="vhs-slide-content">
+                <img
+                  src={producto.imagenes[0]}
+                  alt={producto.nombre}
+                  className="vhs-slide-img"
+                  loading="lazy"
+                />
+                <div className="vhs-slide-info">
+                  <h3 className="vhs-slide-name">{producto.nombre}</h3>
+                  <p className="vhs-slide-desc">{producto.descripcion}</p>
+                  <div className="vhs-slide-price">${producto.precio.toLocaleString()}</div>
+                </div>
+                <div className="vhs-slide-badge">OFERTA</div>
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
+
+      <div className="vhs-thumbnails-container">
+        <h3 className="vhs-thumbnails-title">TÍTULOS DESTACADOS</h3>
+        <div className="vhs-thumbnails-grid">
+          {productos.map((producto) => (
+            <div key={producto.id} className="vhs-thumbnail-item">
               <img
                 src={producto.imagenes[0]}
                 alt={producto.nombre}
-                className="vhs-thumbnail-image"
+                className="vhs-thumbnail-img"
+                loading="lazy"
               />
-              <div className="vhs-badge">NUEVO</div>
             </div>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,14 +1,11 @@
 .vhs-header {
   width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
   background: rgba(10, 26, 58, 0.9);
   transition: all 0.3s ease;
   font-family: 'Arial Black', sans-serif;
   text-transform: uppercase;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+
 
   &.scrolled {
     background: rgba(10, 18, 40, 0.95);
@@ -54,6 +51,25 @@
   width: auto;
   transition: height 0.3s ease;
   object-fit: contain;
+}
+
+.videoclub-logo-container {
+  flex-grow: 1;
+  text-align: center;
+  padding: 0 1rem;
+  
+  .videoclub-logo {
+    color: #ffd100;
+    font-size: 1.5rem;
+    margin: 0;
+    letter-spacing: 1px;
+  }
+  
+  .videoclub-tagline {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.7rem;
+    display: block;
+  }
 }
 
 .vhs-search-container {
@@ -109,7 +125,7 @@
 .vhs-btn-login, 
 .vhs-btn-register, 
 .vhs-btn-logout {
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1rem;
   border-radius: 0;
   font-family: 'Arial Black', sans-serif;
   font-size: 0.9rem;
@@ -152,7 +168,7 @@
 
 /* Botones de iconos */
 .vhs-btn-auth {
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 36px;
@@ -215,6 +231,7 @@
     justify-content: center;
     transition: right 0.3s ease;
     border-left: 3px solid #ffd100;
+    z-index: 1000;
     
     &.open {
       right: 0;
@@ -240,6 +257,10 @@
   
   .vhs-menu-toggle {
     display: flex;
+  }
+
+  .videoclub-logo-container {
+    display: none;
   }
 }
 
@@ -279,19 +300,7 @@
     font-size: 1rem;
   }
 
-  /* Mostrar solo botones de iconos en desktop */
-  .vhs-btn-login,
-  .vhs-btn-register {
-    display: none;
-  }
-
   .vhs-btn-auth {
     display: flex;
-  }
-
-  /* Ajuste para el botón de logout */
-  .vhs-btn-logout {
-    display: block;
-    padding: 0.5rem 1rem;
   }
 }

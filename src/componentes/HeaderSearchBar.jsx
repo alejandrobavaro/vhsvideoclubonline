@@ -1,4 +1,5 @@
 import React from 'react';
+import "../assets/scss/_03-Componentes/_Header.scss";
 
 function HeaderSearchBar({ categories, onCategoryChange, searchQuery, setSearchQuery, placeholder }) {
   const handleCategoryChange = (event) => {

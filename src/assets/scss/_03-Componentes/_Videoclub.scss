@@ -1,0 +1,180 @@
+.videoclub-container {
+    width: 100%;
+    padding: 1rem;
+    background-color: #001a4d;
+    border-radius: 20px;
+  }
+  
+  .videoclub-section {
+    margin-bottom: 2rem;
+  }
+  
+  .videoclub-section-title {
+    color: #ffd800;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 1.2rem;
+    margin: 0 0 1rem 0;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid #ffd800;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .videoclub-movies-container {
+    display: grid;
+    grid-template-columns: 3fr;
+    gap: 1rem;
+  }
+  
+  .videoclub-movie-item {
+    width: 100%;
+  }
+  
+  .videoclub-movie-image-container {
+    position: relative;
+    width: 100%;
+    padding-top: 150%;
+    overflow: hidden;
+  }
+  
+  .videoclub-movie-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid #ffd800;
+    border-radius: 20px;
+  }
+  
+  .videoclub-movie-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .videoclub-movie-item:hover .videoclub-movie-overlay {
+    opacity: 1;
+  }
+  
+  .videoclub-play-button {
+    background-color: #ffd800;
+    color: #001a4d;
+    border: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    margin: 0 auto 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+  }
+  
+  .videoclub-movie-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+  }
+  
+  .videoclub-movie-rating {
+    color: #ffd800;
+  }
+  
+  .videoclub-movie-details {
+    padding: 0.5rem 0;
+  }
+  
+  .videoclub-movie-title {
+    font-size: 0.9rem;
+    margin: 0.3rem 0;
+    color: #ffffff;
+  }
+  
+  .videoclub-movie-genre {
+    font-size: 0.8rem;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .videoclub-categories-container {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    gap: 0.8rem;
+  }
+  
+  .videoclub-category-item {
+    background: rgba(255, 216, 0, 0.1);
+    border: 1px solid rgba(255, 216, 0, 0.3);
+    padding: 0.8rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+  }
+  
+  .videoclub-category-item:hover {
+    background: rgba(255, 216, 0, 0.2);
+    border-color: #ffd800;
+    
+  }
+  
+  .videoclub-category-name {
+    font-size: 0.9rem;
+    color: #ffd800;
+    margin: 0 0 0.3rem 0;
+  }
+  
+  .videoclub-category-count {
+    font-size: 0.8rem;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  @media (min-width: 768px) {
+    .videoclub-container {
+      padding: 1.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+    .videoclub-section-title {
+      font-size: 1.5rem;
+    }
+  
+    .videoclub-movies-container {
+      grid-template-columns: repeat(2, 3fr);
+      gap: 1.5rem;
+    }
+  
+    .videoclub-categories-container {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.2rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .videoclub-section-title {
+      font-size: 1.8rem;
+    }
+  
+    .videoclub-movies-container {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+    }
+  
+    .videoclub-categories-container {
+      grid-template-columns: repeat(6, 1fr);
+      gap: 1.5rem;
+    }
+  }

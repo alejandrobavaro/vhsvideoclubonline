@@ -21,7 +21,6 @@
   list-style: none;
   -webkit-tap-highlight-color: transparent;
 
-
   &::selection {
     background: #ffd800;
     color: #0033a0;
@@ -43,12 +42,10 @@ body {
   overflow-x: hidden;
   color: #fff;
   font-family: 'VCR OSD Mono', monospace;
-
   line-height: 1.4;
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  
 }
 
 /* Contenedor principal VHS */
@@ -58,9 +55,9 @@ body {
   color: #fff;
   display: flex;
   flex-direction: column;
-  // background: linear-gradient(135deg, #001a4d, #0033a0); /* Gradiente principal */
   overflow: hidden;
   transition: all 0.3s ease;
+  padding-top: 0;
 
   &.rewinding {
     transform: scale(0.98);
@@ -108,7 +105,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('/img/vhs-noise.gif');
+  background: url('/img/00-fondos/fondo1.jpg');
   opacity: 0.06;
   pointer-events: none;
   z-index: 3;
@@ -121,7 +118,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('/img/vhs-glitch.gif');
+  background: url('/img/00-fondos/fondo2.jpg');
   opacity: 0;
   pointer-events: none;
   z-index: 4;
@@ -130,10 +127,9 @@ body {
 
 /* Divisor estilo cinta VHS */
 .vhs-divider {
-  height: 4px;
-  margin: 1rem 0;
+  height: 3px;
+  margin: 0.5rem 0;
   background: linear-gradient(90deg, #001a4d, #0033a0, #001a4d);
-  position: relative;
   z-index: 5;
   box-shadow: 
     0 2px 5px rgba(255, 216, 0, 0.3),
@@ -262,13 +258,13 @@ body {
 /* Responsive VHS */
 @media (min-width: 768px) {
   .vhs-divider {
-    height: 6px;
-    margin: 1.5rem 0;
+    height: 4px;
+    margin: 0.75rem 0;
 
     .vhs-tape {
       width: 80px;
       height: 25px;
-      top: -12px;
+      top: -10px;
 
       &::before {
         width: 60px;
@@ -289,8 +285,8 @@ body {
 
 @media (min-width: 1024px) {
   .vhs-divider {
-    height: 8px;
-    margin: 2rem 0;
+    height: 5px;
+    margin: 1rem 0;
   }
 
   .vhs-noise {
@@ -315,4 +311,58 @@ body {
     0 0 15px rgba(255, 216, 0, 0.5),
     inset 0 0 15px rgba(0, 0, 0, 0.5);
   background: rgba(0, 26, 77, 0.7);
+}
+
+/* Estilos para el banner */
+.main-banner {
+  width: 100%;
+  background: linear-gradient(rgba(0, 26, 77, 0.8), rgba(0, 26, 77, 0.8)), 
+              url('/img/00-fondos/banner-bg.jpg') center/cover;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  border-bottom: 3px solid #ffd800;
+}
+
+.main-banner-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-banner-title {
+  color: #ffd800;
+  font-family: 'Bungee', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 0 #0033a0;
+}
+
+.main-banner-subtitle {
+  color: #fff;
+  font-family: 'VCR OSD Mono', monospace;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 768px) {
+  .main-banner {
+    padding: 2rem 1rem;
+  }
+  
+  .main-banner-title {
+    font-size: 2.5rem;
+  }
+  
+  .main-banner-subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-banner {
+    padding: 3rem 1rem;
+  }
+  
+  .main-banner-title {
+    font-size: 3rem;
+  }
 }

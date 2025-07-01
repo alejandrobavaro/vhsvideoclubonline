@@ -1,110 +1,95 @@
-.main-pelicula-card {
-  cursor: pointer;
-  transition: all 0.3s ease;
+.main-pelicula-item {
+  width: 100%;
   position: relative;
   overflow: hidden;
   border: 2px solid #ffd800;
-  border-radius: 20px;
+  border-radius: 8px;
   background: #001a4d;
-  height: 0;
-  padding-top: 150%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  aspect-ratio: 2/3; // Mantenemos relación de aspecto de poster de película
+  transition: all 0.3s ease;
 
   &.hovered {
-    transform: scale(1.05);
-    z-index: 20;
-    box-shadow: 0 0 20px rgba(255, 216, 0, 0.7);
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(255, 216, 0, 0.5);
+    z-index: 10;
   }
+}
 
-  &__portada {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.main-pelicula-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
 
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.3s ease;
-    }
-  }
+.main-pelicula-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 20%, transparent 50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0.8rem;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
 
-  &__info {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 0.8rem;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
-    transform: translateY(100%);
-    transition: transform 0.3s ease;
-
-    h3 {
-      color: #ffd800;
-      font-family: 'Bungee', sans-serif;
-      font-size: 0.9rem;
-      margin-bottom: 0.3rem;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-
-    p {
-      color: #fff;
-      font-family: 'VCR OSD Mono', monospace;
-      font-size: 0.7rem;
-      margin-bottom: 0.3rem;
-    }
-  }
-
-  &__rating {
+.main-pelicula-info {
+  transform: translateY(20px);
+  transition: transform 0.3s ease;
+  
+  h3 {
     color: #ffd800;
-    font-size: 0.8rem;
-    letter-spacing: 2px;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 0.9rem;
+    margin: 0 0 0.3rem 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
-  &:hover {
-    .main-pelicula-card__info {
-      transform: translateY(0);
-    }
+  p {
+    color: #fff;
+    font-size: 0.7rem;
+    margin: 0 0 0.3rem 0;
+  }
+}
 
-    .main-pelicula-card__portada img {
-      transform: scale(1.1);
-    }
+.main-pelicula-rating {
+  color: #ffd800;
+  font-size: 0.8rem;
+}
+
+.main-pelicula-item:hover {
+  .main-pelicula-image {
+    transform: scale(1.05);
+  }
+  
+  .main-pelicula-info {
+    transform: translateY(0);
   }
 }
 
 @media (min-width: 768px) {
-  .main-pelicula-card {
-    &__info {
-      h3 {
-        font-size: 1rem;
-      }
+  .main-pelicula-overlay {
+    padding: 1rem;
+  }
 
-      p {
-        font-size: 0.8rem;
-      }
+  .main-pelicula-info {
+    h3 {
+      font-size: 1rem;
     }
 
-    &__rating {
-      font-size: 0.9rem;
+    p {
+      font-size: 0.8rem;
     }
   }
-}
 
-.loading, .error {
-  font-family: 'VCR OSD Mono', monospace;
-  color: #ffd800;
-  text-align: center;
-  padding: 2rem;
-  border: 2px dashed #ffd800;
-  margin: 1rem;
-  background: rgba(0, 26, 77, 0.7);
-}
-
-.error {
-  color: #ff0000;
-  border-color: #ff0000;
+  .main-pelicula-rating {
+    font-size: 0.9rem;
+  }
 }

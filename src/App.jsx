@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import Header from './componentes/Header';
+import MainBanner from './componentes/MainBanner';
 import MainContent from './componentes/MainContent';
+import Videoclub from './componentes/Videoclub';
 import Contacto from './componentes/Contacto';
 import ContactoFormularioSlider from './componentes/ContactoFormularioSlider';
 import PublicidadDebajo from './componentes/MainPublicidadSlider';
@@ -14,7 +16,6 @@ import { AuthProvider } from './componentes/SesionAuthContext';
 import Login from './componentes/SesionLogin';
 import Register from './componentes/SesionRegistrate';
 import Logout from './componentes/SesionLogout';
-
 import MainWhatsappIcon from './componentes/MainWhatsappIcon';
 import '../src/assets/scss/_01-General/_BodyIndexApp.scss';
 
@@ -32,8 +33,6 @@ function App() {
   const removeProductFromCart = (id) => {
     setProductCart(productCart.filter((product) => product.id !== id));
   };
-
-
 
   const playVhsEffect = () => {
     setIsRewinding(true);
@@ -87,14 +86,14 @@ function App() {
       <AuthProvider>
         <OfertasProvider>
           <div className={`vhs-container ${isRewinding ? 'rewinding' : ''}`}>
-       
-            
             <Header searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+            <MainBanner />
             
             <div className="vhs-divider"></div>
             
             <Routes>
               <Route path="/" element={<MainContent />} />
+              <Route path="/videoclub" element={<Videoclub />} />
               <Route path="/contacto" element={<><Contacto /><ContactoFormularioSlider /></>} />
               <Route path="/tienda" element={
                 <Tienda 
@@ -116,7 +115,6 @@ function App() {
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
               <Route path="/logout" element={<Logout />} />
- 
             </Routes>
             
             <div className="vhs-divider">

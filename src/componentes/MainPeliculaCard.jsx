@@ -6,16 +6,21 @@ const MainPeliculaCard = ({ pelicula }) => {
 
   return (
     <div 
-      className={`main-pelicula-card ${isHovered ? 'hovered' : ''}`}
+      className={`main-pelicula-item ${isHovered ? 'hovered' : ''}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="main-pelicula-card__portada">
-        <img src={pelicula.portada} alt={pelicula.titulo} />
-        <div className="main-pelicula-card__info">
+      <img 
+        src={pelicula.portada} 
+        alt={pelicula.titulo} 
+        className="main-pelicula-image"
+        loading="lazy"
+      />
+      <div className="main-pelicula-overlay">
+        <div className="main-pelicula-info">
           <h3>{pelicula.titulo}</h3>
           <p>{pelicula.año} • {pelicula.genero}</p>
-          <div className="main-pelicula-card__rating">
+          <div className="main-pelicula-rating">
             {'★'.repeat(Math.round(pelicula.rating / 2))}
             {'☆'.repeat(5 - Math.round(pelicula.rating / 2))}
           </div>

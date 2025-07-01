@@ -1,281 +1,211 @@
-/* Estilo VHS Blockbuster */
-.vhs-publicidad-container {
-  position: relative;
+.vhs-publicidad {
   max-width: 1200px;
-  margin: 2rem auto;
-  padding: 1.5rem;
-  // background: rgba(10, 26, 58, 0.9);
-  border: 5px solid #ffd100;
-  box-shadow: 0 0 20px rgba(255, 209, 0, 0.5);
-  font-family: 'Arial Black', sans-serif;
-  color: white;
-  overflow: hidden;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 8px;
-    background: linear-gradient(
-      90deg,
-      #122b5a, #ffd100, #122b5a, #ffd100, #122b5a
-    );
-    z-index: 1;
-  }
+  margin: 1rem auto;
+  padding: 1rem;
+  background: rgba(0, 26, 77, 0.8);
+  border: 3px solid #ffd800;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 216, 0, 0.3);
 }
 
-.vhs-tape-top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 8px;
-  background: linear-gradient(90deg, 
-    #122b5a, #ffd100, #122b5a, #ffd100, #122b5a);
-  opacity: 0.8;
-  z-index: 2;
-}
-
-.vhs-slider-wrapper {
-  position: relative;
-  padding: 1.5rem;
-  // background: rgba(0, 0, 0, 0.7);
-  border: 3px solid #ffd100;
-}
-
-.vhs-section-title {
+.vhs-publicidad-header {
   text-align: center;
   margin-bottom: 1.5rem;
-  position: relative;
-  font-size: 2.2rem;
-  color: #ffd100;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: bold;
-  text-shadow: 0 0 10px rgba(255, 209, 0, 0.7);
-  padding: 0.5rem;
   
-  .vhs-title-bg {
-    display: inline-block;
-    padding: 0 2rem;
-    // background: rgba(10, 18, 40, 0.7);
-  }
 }
 
-.vhs-main-slider {
-  margin-bottom: 2rem;
-  border: 3px solid #ffd100;
-  box-shadow: 0 0 15px rgba(255, 209, 0, 0.5);
-  position: relative;
-
-  .slick-slide {
-    outline: none;
-  }
-}
-
-.vhs-slide {
-  position: relative;
-  height: 400px;
-  overflow: hidden;
-
-  .vhs-slide-content {
-    position: relative;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    // background: #000;
-  }
-
-  .vhs-slide-image {
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: contain;
-    transition: transform 0.5s ease;
-    border: 2px solid #ffd100;
-  }
-
-  &:hover .vhs-slide-image {
-    transform: scale(1.05);
-  }
-
-  .vhs-price-tag {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background: rgba(18, 43, 90, 0.9);
-    color: #ffd100;
-    padding: 0.5rem 1rem;
-    font-size: 1.8rem;
-    font-weight: bold;
-    border-radius: 0;
-    box-shadow: 0 0 10px rgba(255, 209, 0, 0.7);
-    z-index: 2;
-    text-shadow: 1px 1px 2px #000;
-    border: 2px solid #ffd100;
-  }
-
-  .vhs-sticker {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    background: #ff0000;
-    color: white;
-    padding: 0.5rem 1rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-    transform: rotate(-15deg);
-    box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
-    z-index: 2;
-    text-shadow: 1px 1px 2px #000;
-    border: 2px solid #ffd100;
-    text-transform: uppercase;
-  }
-}
-
-.vhs-mini-title {
-  text-align: center;
-  margin: 1.5rem 0;
-  font-size: 1.5rem;
-  color: #ffd100;
+.vhs-publicidad-title {
+  color: #ffd800;
+  font-family: 'Bungee', sans-serif;
+  font-size: 1.8rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  text-shadow: 0 0 5px rgba(255, 209, 0, 0.7);
-  position: relative;
+  text-shadow: 0 0 10px rgba(255, 216, 0, 0.5);
+  margin-bottom: 0.5rem;
+  
 }
 
-.vhs-thumbnails {
+.vhs-divider {
+  height: 3px;
+  background: linear-gradient(90deg, #001a4d, #ffd800, #001a4d);
+  margin: 0 auto;
+  width: 80%;
+  
+}
+
+.vhs-slider-container {
+  position: relative;
+  margin-bottom: 2rem;
+  
+}
+
+.vhs-slide-item {
+  outline: none;
+}
+
+.vhs-slide-content {
+  position: relative;
+  height: 300px;
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 1.5rem;
-  padding: 1rem;
-  flex-wrap: wrap;
-}
-
-.vhs-thumbnail {
-  width: 100px;
-  height: 100px;
-  border: 3px solid #ffd100;
-  position: relative;
   overflow: hidden;
-  transition: all 0.3s ease;
-  box-shadow: 0 0 10px rgba(255, 209, 0, 0.5);
-  background: #000;
-
-  &:hover {
-    transform: scale(1.1);
-    z-index: 1;
-    box-shadow: 0 0 20px rgba(255, 209, 0, 0.7);
-  }
-
-  .vhs-thumbnail-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
 }
 
-.vhs-arrow {
+.vhs-slide-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  
+}
+
+.vhs-slide-item:hover .vhs-slide-img {
+  transform: scale(1.05);
+}
+
+.vhs-slide-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+}
+
+.vhs-slide-name {
+  color: #ffd800;
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.vhs-slide-desc {
+  color: #fff;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.vhs-slide-price {
+  color: #ffd800;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.vhs-slide-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: #ff0000;
+  color: #fff;
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  transform: rotate(-15deg);
+  border: 2px solid #ffd800;
+  border-radius: 20px;
+}
+
+.vhs-slider-arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  background: rgba(18, 43, 90, 0.9);
-  color: #ffd100;
-  border-radius: 0;
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 26, 77, 0.9);
+  color: #ffd800;
+  border: 2px solid #ffd800;
+  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  z-index: 3;
-  font-size: 2rem;
+  z-index: 10;
   transition: all 0.3s ease;
-  border: 2px solid #ffd100;
-  text-shadow: 1px 1px 2px #000;
-  box-shadow: 0 0 10px rgba(255, 209, 0, 0.5);
-
+  
   &:hover {
-    background: rgba(255, 209, 0, 0.3);
-    color: white;
-    transform: translateY(-50%) scale(1.1);
+    background: rgba(255, 216, 0, 0.2);
   }
-
+  
   &.next {
-    right: 25px;
+    right: 1rem;
   }
-
+  
   &.prev {
-    left: 25px;
+    left: 1rem;
   }
+}
+
+.vhs-thumbnails-container {
+  text-align: center;
+}
+
+.vhs-thumbnails-title {
+  color: #ffd800;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.vhs-thumbnails-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.vhs-thumbnail-item {
+  border: 3px solid #ffd800;
+  border-radius: 20px;
+  height: 100px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 216, 0, 0.5);
+  }
+}
+
+.vhs-thumbnail-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
 }
 
 .vhs-loading {
   text-align: center;
   padding: 2rem;
-  font-size: 1.8rem;
-  color: #ffd100;
+  color: #ffd800;
   font-family: 'Arial Black', sans-serif;
-  font-weight: bold;
-  text-shadow: 0 0 5px rgba(255, 209, 0, 0.7);
 }
 
-/* Efecto VHS */
-.vhs-publicidad-container::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: 
-    linear-gradient(rgba(255, 209, 0, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 209, 0, 0.05) 1px, transparent 1px);
-  background-size: 20px 20px;
-  pointer-events: none;
-  opacity: 0.3;
-  z-index: -1;
-}
-
-/* Responsive */
 @media (max-width: 768px) {
-  .vhs-publicidad-container {
-    padding: 1rem;
-    margin: 1rem auto;
+  .vhs-publicidad {
+    margin: 0.5rem auto;
+    padding: 0.5rem;
   }
-
-  .vhs-section-title {
-    font-size: 1.8rem;
-  }
-
-  .vhs-slide {
-    height: 300px;
-  }
-
-  .vhs-arrow {
-    width: 40px;
-    height: 40px;
+  
+  .vhs-publicidad-title {
     font-size: 1.5rem;
-    
-    &.next {
-      right: 15px;
-    }
-    
-    &.prev {
-      left: 15px;
-    }
   }
-
-  .vhs-thumbnail {
-    width: 80px;
-    height: 80px;
+  
+  .vhs-slide-content {
+    height: 250px;
+  }
+  
+  .vhs-thumbnails-grid {
+    grid-template-columns: repeat(2, 1fr);
+    
   }
 }
 
 @media (min-width: 1024px) {
-  .vhs-section-title {
-    font-size: 2.5rem;
+  .vhs-publicidad-title {
+    font-size: 2rem;
+  }
+  
+  .vhs-slide-content {
+    height: 350px;
   }
 }

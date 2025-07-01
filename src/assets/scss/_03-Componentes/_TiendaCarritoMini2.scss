@@ -4,7 +4,7 @@
   right: 20px;
   background-color: #0a1a3a;
   border: 2px solid #ffd100;
-  border-radius: 4px;
+  border-radius: 20px;
   padding: 15px;
   z-index: 999; /* Un nivel menos que el header */
   transition: all 0.3s ease;
@@ -42,7 +42,7 @@
 
 .blockbuster-cart-header {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 3fr 3fr;
   gap: 10px;
   margin-bottom: 15px;
 }
@@ -95,7 +95,7 @@
   background-color: #122b5a;
   color: #ffd100;
   border: 1px solid #ffd100;
-  border-radius: 4px;
+  border-radius: 20px;
   padding: 8px 15px;
   font-size: 0.9rem;
   font-weight: bold;

@@ -58,7 +58,8 @@
   position: relative;
   background-color: #0a1a3a;
   border: 3px solid #ffd100;
-  border-radius: 4px;
+  border-radius: 20px;
+
   padding: 25px;
   max-width: 500px;
   animation: blockbuster-scaleUp 0.3s ease;
@@ -72,7 +73,7 @@
   background-color: #122b5a;
   color: #ffd100;
   border: 2px solid #ffd100;
-  border-radius: 50%;
+  border-radius: 20px;
   width: 36px;
   height: 36px;
   font-size: 1.2rem;
@@ -124,6 +125,7 @@
     font-size: 0.9rem;
     letter-spacing: 1px;
     border-left: 3px solid #ffd100;
+    border-radius: 20px;
     transition: all 0.3s ease;
     
     &:hover {
@@ -142,7 +144,8 @@
   background-color: #122b5a;
   color: #ffd100;
   border: 2px solid #ffd100;
-  border-radius: 4px;
+  border-radius: 20px;
+
   padding: 12px 24px;
   font-size: 1rem;
   font-weight: bold;

@@ -24,8 +24,8 @@ const MainUltimosEstrenos = () => {
     fetchPeliculas();
   }, []);
 
-  if (loading) return <div className="loading">CARGANDO ESTRENOS...</div>;
-  if (error) return <div className="error">ERROR: {error}</div>;
+  if (loading) return <div className="main-loading">CARGANDO ESTRENOS...</div>;
+  if (error) return <div className="main-error">ERROR: {error}</div>;
 
   const ultimosEstrenos = [...peliculas]
     .sort((a, b) => new Date(b.fechaEstreno) - new Date(a.fechaEstreno))
@@ -33,10 +33,12 @@ const MainUltimosEstrenos = () => {
 
   return (
     <section className="main-ultimos-estrenos">
-      <h2 className="main-ultimos-estrenos__titulo">ÚLTIMOS ESTRENOS</h2>
-      <div className="main-ultimos-estrenos__grid">
+      <h2 className="main-ultimos-estrenos-title">ÚLTIMOS ESTRENOS</h2>
+      <div className="main-ultimos-estrenos-grid">
         {ultimosEstrenos.map(pelicula => (
-          <MainPeliculaCard key={pelicula.id} pelicula={pelicula} />
+          <div key={pelicula.id} className="main-pelicula-container">
+            <MainPeliculaCard pelicula={pelicula} />
+          </div>
         ))}
       </div>
     </section>

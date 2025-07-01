@@ -4,96 +4,76 @@ import { MdEmail } from "react-icons/md";
 import "../assets/scss/_03-Componentes/_Contacto.scss";
 
 const Contacto = () => {
+  const redes = [
+    {
+      icon: <FaFacebook className="contacto-icono" size={24} />,
+      text: "Facebook",
+      url: "https://www.facebook.com/vhsvideoclub"
+    },
+    {
+      icon: <FaInstagram className="contacto-icono" size={24} />,
+      text: "Instagram",
+      url: "https://www.instagram.com/vhsvideoclub"
+    },
+    {
+      icon: <FaYoutube className="contacto-icono" size={24} />,
+      text: "YouTube",
+      url: "https://www.youtube.com/vhsvideoclub"
+    },
+    {
+      icon: <FaSpotify className="contacto-icono" size={24} />,
+      text: "Spotify",
+      url: "https://open.spotify.com/vhsvideoclub"
+    },
+    {
+      icon: <MdEmail className="contacto-icono" size={24} />,
+      text: "Escríbenos",
+      url: "mailto:contacto@vhsvideoclub.com"
+    },
+    {
+      icon: <FaPaypal className="contacto-icono" size={24} />,
+      text: "Colabora",
+      url: "https://www.paypal.com/vhsvideoclub"
+    }
+  ];
+
   return (
-    <div className="vhs-contact-container">
-      <div className="vhs-tape-top"></div>
-      
-      <h1 className="vhs-contact-title">CONTACTA AL VIDEOCLUB</h1>
-      <div className="vhs-divider">
-        <span className="vhs-divider-icon">✧✧✧</span>
+    <div className="contacto-contenedor">
+      <h1 className="contacto-titulo">CONTACTA AL VIDEOCLUB</h1>
+      <div className="contacto-divisor">
+        <span>✧✧✧</span>
       </div>
 
-      <div className="vhs-contact-grid">
-        <div className="vhs-logo-column">
-          <div className="vhs-logo-main">
+      <div className="contacto-contenido">
+        <div className="contacto-columna-logo">
+          <div className="contacto-logo-principal">
             <img
               src="/img/02-logos/logovhsvideoclibonline1.png"
               alt="VHS Videoclub"
-              className="vhs-main-logo"
+              className="contacto-logo-imagen"
             />
-          </div>
-          
-          <div className="vhs-logos-grid">
-            {[1, 2, 3, 4, 5, 6].map((item) => (
-              <div 
-                key={item} 
-                className={`vhs-logo-item logo-${item}`}
-              >
-                <div className="vhs-logo-frame">
-                  <img
-                    src={`/img/vhs-icon-${item}.png`}
-                    alt={`Icono ${item}`}
-                    className="vhs-logo-img"
-                  />
-                </div>
-              </div>
-            ))}
           </div>
         </div>
 
-        <div className="vhs-contact-column">
-          <h2 className="vhs-contact-subtitle">NUESTRAS REDES</h2>
+        <div className="contacto-columna-redes">
+          <h2 className="contacto-subtitulo">NUESTRAS REDES</h2>
           
-          <div className="vhs-contact-items">
-            {[
-              {
-                icon: <FaFacebook className="vhs-contact-icon" />,
-                text: "Facebook",
-                url: "https://www.facebook.com/vhsvideoclub"
-              },
-              {
-                icon: <FaInstagram className="vhs-contact-icon" />,
-                text: "Instagram",
-                url: "https://www.instagram.com/vhsvideoclub"
-              },
-              {
-                icon: <FaYoutube className="vhs-contact-icon" />,
-                text: "YouTube",
-                url: "https://www.youtube.com/vhsvideoclub"
-              },
-              {
-                icon: <FaSpotify className="vhs-contact-icon" />,
-                text: "Spotify",
-                url: "https://open.spotify.com/vhsvideoclub"
-              },
-              {
-                icon: <MdEmail className="vhs-contact-icon" />,
-                text: "Escríbenos",
-                url: "mailto:contacto@vhsvideoclub.com"
-              },
-              {
-                icon: <FaPaypal className="vhs-contact-icon" />,
-                text: "Colabora con nosotros",
-                url: "https://www.paypal.com/vhsvideoclub"
-              }
-            ].map((item, index) => (
+          <div className="contacto-lista-redes">
+            {redes.map((red, index) => (
               <a
                 key={index}
-                href={item.url}
+                href={red.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="vhs-contact-item"
+                className="contacto-enlace-red"
               >
-                {item.icon}
-                <span>{item.text}</span>
-                <div className="vhs-hover-effect"></div>
+                {red.icon}
+                <span className="contacto-texto-red">{red.text}</span>
               </a>
             ))}
           </div>
         </div>
       </div>
-
-      <div className="vhs-overlay"></div>
     </div>
   );
 };

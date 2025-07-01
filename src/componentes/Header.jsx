@@ -9,13 +9,23 @@ const Header = ({ searchQuery, setSearchQuery }) => {
   const { state, dispatch } = useAuth();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1024);
+    };
+    window.addEventListener('resize', handleResize);
+    
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
 
   useEffect(() => {
@@ -39,6 +49,11 @@ const Header = ({ searchQuery, setSearchQuery }) => {
             loading="lazy"
           />
         </Link>
+
+        <div className="videoclub-logo-container">
+          <h1 className="videoclub-logo">VHS VIDEOCLUB</h1>
+          <span className="videoclub-tagline">PLATAFORMA RETROFLIX</span>
+        </div>
 
         {showSearch && (
           <div className="vhs-search-container">
@@ -64,12 +79,14 @@ const Header = ({ searchQuery, setSearchQuery }) => {
           <div className="vhs-nav-auth-links">
             {state.isAuthenticated ? (
               <>
-                <button 
-                  className="vhs-btn-logout" 
-                  onClick={() => dispatch({ type: "LOGOUT" })}
-                >
-                  CERRAR SESIÓN
-                </button>
+                {isMobile && (
+                  <button 
+                    className="vhs-btn-logout" 
+                    onClick={() => dispatch({ type: "LOGOUT" })}
+                  >
+                    CERRAR SESIÓN
+                  </button>
+                )}
                 <Link 
                   to="/account" 
                   className="vhs-btn-auth" 
@@ -77,17 +94,32 @@ const Header = ({ searchQuery, setSearchQuery }) => {
                 >
                   <BiUser className="vhs-auth-icon" />
                 </Link>
+                {!isMobile && (
+                  <button 
+                    className="vhs-btn-logout" 
+                    onClick={() => dispatch({ type: "LOGOUT" })}
+                  >
+                    CERRAR SESIÓN
+                  </button>
+                )}
               </>
             ) : (
               <>
-                <Link to="/login" className="vhs-btn-login">INICIAR SESIÓN</Link>
-                <Link to="/register" className="vhs-btn-register">REGISTRARSE</Link>
-                <Link to="/login" className="vhs-btn-auth" title="Iniciar sesión">
-                  <BiUser className="vhs-auth-icon" />
-                </Link>
-                <Link to="/register" className="vhs-btn-auth" title="Registrarse">
-                  <BiUserPlus className="vhs-auth-icon" />
-                </Link>
+                {isMobile ? (
+                  <>
+                    <Link to="/login" className="vhs-btn-login">INICIAR SESIÓN</Link>
+                    <Link to="/register" className="vhs-btn-register">REGISTRARSE</Link>
+                  </>
+                ) : (
+                  <>
+                    <Link to="/login" className="vhs-btn-auth" title="Iniciar sesión">
+                      <BiUser className="vhs-auth-icon" />
+                    </Link>
+                    <Link to="/register" className="vhs-btn-auth" title="Registrarse">
+                      <BiUserPlus className="vhs-auth-icon" />
+                    </Link>
+                  </>
+                )}
               </>
             )}
           </div>
@@ -97,6 +129,7 @@ const Header = ({ searchQuery, setSearchQuery }) => {
           className={`vhs-menu-toggle ${isMenuOpen ? "open" : ""}`}
           onClick={toggleMenu}
           aria-label="Menú"
+          aria-expanded={isMenuOpen}
         >
           <span className="vhs-menu-line"></span>
           <span className="vhs-menu-line"></span>

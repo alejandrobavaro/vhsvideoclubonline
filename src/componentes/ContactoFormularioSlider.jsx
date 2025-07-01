@@ -12,10 +12,10 @@ const ContactoFormularioSlider = () => {
     const fetchProductos = async () => {
       try {
         const response = await fetch("/productos.json");
-        const productos = await response.json();
-        setProductos(productos);
+        const data = await response.json();
+        setProductos(data);
       } catch (error) {
-        console.error("Error al cargar los productos:", error);
+        console.error("Error:", error);
       }
     };
 
@@ -31,30 +31,26 @@ const ContactoFormularioSlider = () => {
     autoplay: true,
     autoplaySpeed: 4000,
     arrows: true,
-    fade: true,
-    cssEase: 'cubic-bezier(0.47, 0, 0.745, 0.715)'
+    fade: true
   };
 
   return (
-    <div className="vhs-contact-form-slider">
-      <div className="vhs-tape-top"></div>
+    <div className="formulario-slider-container">
+      <div className="formulario-slider-cinta"></div>
       
-      <div className="vhs-form-slider-container">
-        {/* Formulario de contacto */}
-        <div className="vhs-form-column">
-          <h2 className="vhs-form-title">
-            <span className="vhs-title-bg">CONTÁCTANOS</span>
-          </h2>
+      <div className="formulario-slider-contenido">
+        <div className="formulario-columna">
+          <h2 className="formulario-titulo">CONTÁCTANOS</h2>
           
           <form
-            className="vhs-contact-form"
+            className="contacto-formulario"
             action="https://formspree.io/f/xbjnlgzz"
             target="_blank"
             method="post"
           >
-            <div className="vhs-form-group">
+            <div className="formulario-grupo">
               <label htmlFor="nombre">
-                <FaUser className="vhs-form-icon" /> NOMBRE:
+                <FaUser className="formulario-icono" /> NOMBRE:
               </label>
               <input
                 type="text"
@@ -65,9 +61,9 @@ const ContactoFormularioSlider = () => {
               />
             </div>
             
-            <div className="vhs-form-group">
+            <div className="formulario-grupo">
               <label htmlFor="telefono">
-                <FaPhone className="vhs-form-icon" /> TELÉFONO:
+                <FaPhone className="formulario-icono" /> TELÉFONO:
               </label>
               <input
                 type="tel"
@@ -78,9 +74,9 @@ const ContactoFormularioSlider = () => {
               />
             </div>
             
-            <div className="vhs-form-group">
+            <div className="formulario-grupo">
               <label htmlFor="email">
-                <FaEnvelope className="vhs-form-icon" /> EMAIL:
+                <FaEnvelope className="formulario-icono" /> EMAIL:
               </label>
               <input
                 type="email"
@@ -91,9 +87,9 @@ const ContactoFormularioSlider = () => {
               />
             </div>
             
-            <div className="vhs-form-group">
+            <div className="formulario-grupo">
               <label htmlFor="asunto">
-                <FaComment className="vhs-form-icon" /> ASUNTO:
+                <FaComment className="formulario-icono" /> ASUNTO:
               </label>
               <input
                 type="text"
@@ -104,9 +100,9 @@ const ContactoFormularioSlider = () => {
               />
             </div>
             
-            <div className="vhs-form-group">
+            <div className="formulario-grupo">
               <label htmlFor="mensaje">
-                <FaComment className="vhs-form-icon" /> MENSAJE:
+                <FaComment className="formulario-icono" /> MENSAJE:
               </label>
               <textarea
                 id="mensaje"
@@ -117,34 +113,28 @@ const ContactoFormularioSlider = () => {
               ></textarea>
             </div>
             
-            <button type="submit" className="vhs-submit-btn">
-              <span className="vhs-btn-text">ENVIAR MENSAJE</span>
-              <FaPaperPlane className="vhs-btn-icon" />
+            <button type="submit" className="formulario-boton">
+              <span>ENVIAR MENSAJE</span>
+              <FaPaperPlane className="boton-icono" />
             </button>
           </form>
         </div>
 
-        {/* Carrusel de películas */}
-        <div className="vhs-slider-column">
-          <h2 className="vhs-slider-title">
-            <span className="vhs-title-icon">✧</span> NUESTRAS PELÍCULAS <span className="vhs-title-icon">✧</span>
-          </h2>
+        <div className="slider-columna">
+          <h2 className="slider-titulo">✧ NUESTRAS PELÍCULAS ✧</h2>
           
-          <div className="vhs-gif-column">
-          <h2 className="vhs-gif-title">
-            <span className="vhs-title-icon">✧</span> VIDEOCLUB RETRO <span className="vhs-title-icon">✧</span>
-          </h2>
-          
-          <div className="vhs-gif-container">
-            <img 
-              src="../../img/09-gif/1.gif" 
-              alt="Animación de alquiler VHS retro"
-              className="vhs-animated-gif"
-            />
-            <div className="vhs-gif-overlay"></div>
+          <div className="gif-columna">
+            <h2 className="gif-titulo">✧ VIDEOCLUB RETRO ✧</h2>
+            
+            <div className="gif-contenedor">
+              <img 
+                src="/img/09-gif/1.gif" 
+                alt="Animación VHS retro"
+                className="gif-animado"
+              />
+              <div className="gif-overlay"></div>
+            </div>
           </div>
-          </div>
-
         </div>
       </div>
     </div>
